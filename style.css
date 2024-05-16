@@ -45,10 +45,18 @@ h3 {
     margin: auto;
     width: 50%;
     border-radius: 0 30px 30px 30px;
-    background-color: #C2C2C2;
+    background-color: #e8e8e8;
 }
 
 #contact_box:hover {
     background-color: #4996bf;
     cursor: pointer;
+}
+
+#info_box {
+    border: 3px solid #4996bf;
+    margin: auto;
+    width: 50%;
+    border-radius: 0 30px 30px 30px;
+    background-color: #e8e8e8;
 }
