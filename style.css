@@ -3,10 +3,6 @@
     font-size: 18px;
 }
 
-div {
-    width: 50%;
-}
-
 .topnav {
     background-color: black;
     overflow: hidden;
@@ -34,7 +30,6 @@ div {
 h1 {
     text-align: center;
     font-size: 36px!important;
-    color: blue;
 }
 
 h3 {
