@@ -2,3 +2,22 @@
     font-family: 'Proxima Nova Rg';
     font-size: 18px;
 }
+
+.topnav a {
+    float: left;
+    color: blueviolet;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.topnav a:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: aquamarine;
+    color: black;
+}
