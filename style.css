@@ -50,4 +50,5 @@ h3 {
 
 #contact_box:hover {
     background-color: #4996bf;
+    cursor: pointer;
 }
