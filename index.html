@@ -45,7 +45,7 @@
 
         </div>
 
-        <div id="contact_box">
+        <div id="contact_box" onclick="WriteMeAnEmail()">
             <p style="text-align: center">
                 If you have any questions in the meantime, feel free to contact me:
             </p>
@@ -66,9 +66,10 @@
 </body>
 
 <!-- Open a mailto-Window when clicking on the contact box: -->
-<script>
-
+<script type="text/javascript">
+    function WriteMeAnEmail() {
+        window.location.href = "mailto:piehl@wipol.uni-hannover.de"
+    }
 </script>
-
 
 </html>
