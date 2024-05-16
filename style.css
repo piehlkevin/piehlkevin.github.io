@@ -25,6 +25,7 @@
 .topnav a.active {
     background-color: #C2C2C2;
     color: #4996bf;
+    font-weight: bold;
 }
 
 h1 {
