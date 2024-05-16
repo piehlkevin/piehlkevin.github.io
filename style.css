@@ -3,6 +3,11 @@
     font-size: 18px;
 }
 
+.topnav {
+    background-color: black;
+    overflow: hidden;
+}
+
 .topnav a {
     float: left;
     color: blueviolet;
