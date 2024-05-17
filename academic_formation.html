@@ -47,7 +47,7 @@
                     </p>
                 </td>
                 <td style="width: 60%;">
-                    <div class="info_box_blue" id="box_phd_program" onclick="FillIt(this)">
+                    <div class="info_box_blue" id="box_phd_program">
                         <p style="text-align: center">
                             <b>PhD Program Economics and Management</b> <br>
                             Aspired degree: Dr. rer. pol. <br>
@@ -150,11 +150,11 @@
 </html>
 
 <script type="text/javascript">
-    function FillIt(box){
-        console.log(box);
-    }
-
     let show_phd_program = 0;
+    let show_master_degree = 0;
+    let show_master_program = 0;
+    let show_bachelor_degree = 0;
+    let show_bachelor_program = 0;
 
     window.onload = function() {
         document.getElementById('info_phd_program').innerHTML = "<i>click for more information</i>";
@@ -167,7 +167,7 @@
     document.getElementById('box_phd_program').onclick = function() {
         if (show_phd_program === 0) {
             show_phd_program = 1;
-            document.getElementById('info_phd_program').innerHTML = "Research topics: experimental innovation " +
+            document.getElementById('info_phd_program').innerHTML = "Research topics: <br> experimental innovation " +
                 "economics, behavioral economics <br><br> <i>click to close</i>";
         }
         else {
@@ -176,5 +176,59 @@
         }
 
     }
+
+    document.getElementById('box_master_degree').onclick = function() {
+        if (show_master_degree === 0) {
+            show_master_degree = 1;
+            document.getElementById('info_master_degree').innerHTML = "Research topics: <br> experimental innovation " +
+                "economics, behavioral economics <br><br> <i>click to close</i>";
+        }
+        else {
+            show_master_degree = 0;
+            document.getElementById('info_master_degree').innerHTML = "<i>click for more information</i>";
+        }
+
+    }
+
+    document.getElementById('box_master_program').onclick = function() {
+        if (show_master_program === 0) {
+            show_master_program = 1;
+            document.getElementById('info_master_program').innerHTML = "Research topics: <br> experimental innovation " +
+                "economics, behavioral economics <br><br> <i>click to close</i>";
+        }
+        else {
+            show_master_program = 0;
+            document.getElementById('info_master_program').innerHTML = "<i>click for more information</i>";
+        }
+
+    }
+
+    document.getElementById('box_bachelor_degree').onclick = function() {
+        if (show_bachelor_degree === 0) {
+            show_bachelor_degree = 1;
+            document.getElementById('info_bachelor_degree').innerHTML = "Research topics: <br> experimental innovation " +
+                "economics, behavioral economics <br><br> <i>click to close</i>";
+        }
+        else {
+            show_bachelor_degree = 0;
+            document.getElementById('info_bachelor_degree').innerHTML = "<i>click for more information</i>";
+        }
+
+    }
+
+    document.getElementById('box_bachelor_program').onclick = function() {
+        if (show_bachelor_program === 0) {
+            show_bachelor_program = 1;
+            document.getElementById('info_bachelor_program').innerHTML = "Research topics: <br> experimental innovation " +
+                "economics, behavioral economics <br><br> <i>click to close</i>";
+        }
+        else {
+            show_bachelor_program = 0;
+            document.getElementById('info_bachelor_program').innerHTML = "<i>click for more information</i>";
+        }
+
+    }
+
+
 </script>
 
