@@ -60,7 +60,7 @@ h3 {
     background-color: #e8e8e8;
 }
 
-#info_box_blue:hover {
+.info_box_blue:hover {
     background-color: #4996bf;
     cursor: pointer;
 }
@@ -72,7 +72,7 @@ h3 {
     background-color: #e8e8e8;
 }
 
-#info_box_black:hover {
+.info_box_black:hover {
     background-color: #4996bf;
     cursor: pointer;
 }
