@@ -47,7 +47,7 @@
                     </p>
                 </td>
                 <td style="width: 60%;">
-                    <div class="info_box_blue" id="box_phd_program">
+                    <div class="info_box_blue" id="box_phd_program" onclick="FillIt(this)">
                         <p style="text-align: center">
                             <b>PhD Program Economics and Management</b> <br>
                             Aspired degree: Dr. rer. pol. <br>
@@ -150,6 +150,10 @@
 </html>
 
 <script type="text/javascript">
+    function FillIt(box){
+        console.log(box);
+    }
+
     let show_phd_program = 0;
 
     window.onload = function() {
@@ -164,7 +168,7 @@
         if (show_phd_program === 0) {
             show_phd_program = 1;
             document.getElementById('info_phd_program').innerHTML = "Research topics: experimental innovation " +
-                "economics, behavioral economics <br> <i>click to close</i>";
+                "economics, behavioral economics <br><br> <i>click to close</i>";
         }
         else {
             show_phd_program = 0;
