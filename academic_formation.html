@@ -150,6 +150,8 @@
 </html>
 
 <script type="text/javascript">
+    let show_phd_program = 0;
+
     window.onload = function() {
         document.getElementById('info_phd_program').innerHTML = "<i>click for more information</i>";
         document.getElementById('info_master_degree').innerHTML = "<i>click for more information</i>";
@@ -159,7 +161,16 @@
     }
 
     document.getElementById('box_phd_program').onclick = function() {
-        document.getElementById('info_phd_program').innerHTML = "Research topics: experimental innovation economics, " +
-            "behavioral economics <br>";
+        if (show_phd_program === 0) {
+            show_phd_program = 1;
+            document.getElementById('info_phd_program').innerHTML = "Research topics: experimental innovation " +
+                "economics, behavioral economics <br> <i>click to close</i>";
+        }
+        else {
+            show_phd_program = 0;
+            document.getElementById('info_phd_program').innerHTML = "<i>click for more information</i>";
+        }
+
     }
 </script>
+
