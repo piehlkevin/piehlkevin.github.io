@@ -59,3 +59,19 @@ h3 {
     border-radius: 0 30px 30px 30px;
     background-color: #e8e8e8;
 }
+
+table {
+    margin: auto;
+    width: 100%;
+}
+
+.left_column {
+    width: 40%;
+    text-align: right;
+    vertical-align: top;
+    padding-top: 0;
+}
+
+.right_column {
+    width: 60%;
+}
