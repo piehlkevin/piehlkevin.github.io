@@ -50,9 +50,10 @@
                     <div class="info_box_blue">
                         <p style="text-align: center">
                             <b>PhD Program Economics and Management</b> <br>
-                            Aspired degree: Dr. rer. pol. <br><br>
+                            Aspired degree: Dr. rer. pol. <br>
                             <br>
-                            <i>click for more information</i>
+                            <a id="phd_program"></a>
+                            <br>
                         </p>
                     </div>
                 </td>
@@ -78,9 +79,8 @@
                             <b>Degree Master of Science (M.Sc.)</b> <br>
                             Grade: 1.3 (with distinction) <br>
                             <br>
-                            Thesis topic: "Does the Economy Learn to Cope with Pandemics?" <br>
-                            Grade: 1.0 (very good) <br><br>
-                            <i>click to go see my theses</i>
+                            <a id="master_degree"></a>
+                            <br>
                         </p>
                     </div>
                 </td>
@@ -96,10 +96,9 @@
                     <div class="info_box_black">
                         <p style="text-align: center">
                             <b>Studies of Economics and Management (M.Sc.)</b> <br>
-                            Major: Economic Policy and Theory <br>
-                            Minor: Empirical Economics and Econometrics <br><br>
                             <br>
-                            <i>click for more information</i>
+                            <a id="master_program"></a>
+                            <br>
                         </p>
                     </div>
                 </td>
@@ -117,10 +116,8 @@
                             <b>Degree Bachelor of Science (B.Sc.)</b> <br>
                             Grade: 2.0 (good) <br>
                             <br>
-                            Thesis topic: "An Economic Analysis of the Naturalization Policy of the Federal Republic of
-                            Germany" <br>
-                            Grade: 1.7 (good) <br><br>
-                            <i>click to go see my theses</i>
+                            <a id="bachelor_degree"></a>
+                            <br>
                         </p>
                     </div>
                 </td>
@@ -136,10 +133,9 @@
                     <div class="info_box_black">
                         <p style="text-align: center">
                             <b>Studies of Economics and Management (B.Sc.)</b> <br>
-                            Economic specialization modules: Econometrics, Public Finance, Game Theory, Economic Policy,
-                            Economics of Taxation <br><br>
                             <br>
-                            <i>click for more information</i>
+                            <a id="bachelor_program"></a>
+                            <br>
                         </p>
                     </div>
                 </td>
@@ -152,3 +148,17 @@
 </body>
 
 </html>
+
+<script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('phd_program').innerHTML = "<i>click for more information</i>";
+        document.getElementById('master_degree').innerHTML = "<i>click for more information</i>";
+        document.getElementById('master_program').innerHTML = "<i>click for more information</i>";
+        document.getElementById('bachelor_degree').innerHTML = "<i>click for more information</i>";
+        document.getElementById('bachelor_program').innerHTML = "<i>click for more information</i>";
+    }
+
+    document.getElementById('phd_program').onclick = function() {
+        document.getElementById('phd_program').innerHTML = "now, there is something different!";
+    }
+</script>
