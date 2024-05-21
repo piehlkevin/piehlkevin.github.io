@@ -96,9 +96,10 @@ table {
 ul {
     text-align: left;
     margin-top: 5px;
-    /*list-style-image: url("img/ul_logo.png");*/
+    list-style: none;
+    list-style-image: url("img/ul_logo.png");
 }
-
+/*
 ul li:before {
     content: '';
     display: inline-block;
@@ -109,7 +110,7 @@ ul li:before {
     background-repeat: no-repeat;
     margin-left: -20px;
 }
-
+*/
 .box_content_black {
     text-align: center;
     margin-top: 5px;
