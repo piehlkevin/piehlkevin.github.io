@@ -96,7 +96,7 @@ table {
 ul {
     text-align: left;
     margin-top: 5px;
-    list-style: url("img/ul_logo.png");
+    list-style-image: url("img/ul_logo.png");
 }
 
 .box_content_black {
