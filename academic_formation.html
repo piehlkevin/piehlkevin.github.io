@@ -49,8 +49,13 @@
                 <td style="width: 60%;">
                     <div class="info_box_blue" id="box_phd_program">
                         <p style="text-align: center">
-                            <b>PhD Program Economics and Management</b> <br>
-                            Aspired degree: Dr. rer. pol. <br>
+                            <p>
+                                <b>PhD Program Economics and Management</b> <br>
+                                Aspired degree: Dr. rer. pol.
+                            </p>
+                            <p style="color: #4996bf">
+                                Gottfried Wilhelm Leibniz University | Hanover
+                            </p>
                             <br>
                             <a id="info_phd_program"></a>
                             <br>
@@ -169,9 +174,9 @@
             show_phd_program = 1;
             document.getElementById('info_phd_program').innerHTML = "Research topics: <br> experimental innovation " +
                 "economics, behavioral economics <br><br> PhD courses: <ul> " +
-                "<li>Machine learning</li>" +
-                "<li> Applied game theory and information economics</li>" +
-                "<li>Strategic experimentation and learning</li></ul> <br> <i>click to close</i>";
+                "<li>Machine Learning</li>" +
+                "<li> Applied Game Theory and Information Economics</li>" +
+                "<li>Strategic Experimentation and Learning</li></ul> <br> <i>click to close</i>";
         }
         else {
             show_phd_program = 0;
@@ -196,7 +201,8 @@
     document.getElementById('box_master_program').onclick = function() {
         if (show_master_program === 0) {
             show_master_program = 1;
-            document.getElementById('info_master_program').innerHTML = "Major: <br> Economic Policy and Theory <br>" +
+            document.getElementById('info_master_program').innerHTML = "Major: <br> Economic Policy and Theory <ul>" +
+                "<li></li>+"
                 "Minor: <br> Empirical Economics and Econometrics <br><br> <i>click to close</i>";
         }
         else {
@@ -228,7 +234,7 @@
                 "<li>Public Finance</li>" +
                 "<li>Game Theory</li>" +
                 "<li>Economic Policy</li>" +
-                "<li>Economics of Taxation</li> <br> <i>click to close</i>";
+                "<li>Economics of Taxation</li></ul> <br> <i>click to close</i>";
         }
         else {
             show_bachelor_program = 0;
