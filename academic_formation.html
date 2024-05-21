@@ -390,6 +390,7 @@
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
+                console.log(entry.target.getAttribute('class'))
                 entry.target.classList.add('info_box_enter')
             }
         })
