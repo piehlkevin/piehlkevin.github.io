@@ -101,6 +101,7 @@ ul {
 }
 ul li {
     list-style: none;
+    padding-bottom: 2px;
 }
 
 ul li:before {
@@ -111,7 +112,7 @@ ul li:before {
     background-image: url("img/ul_logo.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 0 0.5em -0.25em -1em;
+    margin: 0 0.5em 0 -1em;
 }
 
 .box_content_black {
