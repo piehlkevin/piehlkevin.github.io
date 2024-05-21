@@ -96,3 +96,21 @@ ul {
     text-align: left;
     margin-top: 5px;
 }
+
+.box_content_black {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.box_content_blue {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #4996bf;
+}
+
+.box_content_blue:hover {
+    color: #000000;
+}
