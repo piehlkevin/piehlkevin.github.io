@@ -392,5 +392,15 @@
         text.style.color = '#4996bf';
     }
 
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('boxes_appear')
+            }
+        })
+    });
+
+    observer.observe(document.querySelector('.info_box_black'))
+
 </script>
 

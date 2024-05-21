@@ -139,9 +139,6 @@ ul li:before {
 
 @media (prefers-reduced-motion: no-preference){
     .info_box_black {
-        animation: boxes-appear 4s infinite;
-    }
-    .info_box_blue {
-        animation: boxes-appear 4s infinite;
+        animation: boxes-appear 2s infinite;
     }
 }
