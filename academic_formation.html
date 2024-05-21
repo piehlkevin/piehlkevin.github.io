@@ -280,11 +280,12 @@
     document.getElementById('box_phd_program').onclick = function() {
         if (show_phd_program === 0) {
             show_phd_program = 1;
-            document.getElementById('info_phd_program').innerHTML = "Research topics: <br> experimental innovation " +
-                "economics, behavioral economics <br><br> PhD courses: <ul> " +
-                "<li class='list_1'>Machine Learning</li>" +
-                "<li class='list_1'>Applied Game Theory and Information Economics</li>" +
-                "<li class='list_1'>Strategic Experimentation and Learning</li></ul> <br> <i>click to close</i>";
+            document.getElementById('info_phd_program').innerHTML = "Research topics: <ul>" +
+                "<li>experimental innovation economics</li>" +
+                "<li>economics, behavioral economics </li> PhD courses: <ul> " +
+                "<li>Machine Learning</li>" +
+                "<li>Applied Game Theory and Information Economics</li>" +
+                "<li>Strategic Experimentation and Learning</li></ul> <br> <i>click to close</i>";
         }
         else {
             show_phd_program = 0;
