@@ -99,14 +99,15 @@ ul {
     /*list-style-image: url("img/ul_logo.png");*/
 }
 
-li {
-    margin: 0;
-    padding: 36px 0 36px 84px;
-    list-style: none;
+ul li:first-child:before {
+    content: '';
+    display: inline-block;
+    height: 25px;
+    width: 25px;
     background-image: url("img/ul_logo.png");
-    background-size: 40px;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: left center;
+    margin-left: -25px;
 }
 
 .box_content_black {
