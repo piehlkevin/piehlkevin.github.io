@@ -375,14 +375,16 @@
     function MakeTextBlack(text, list) {
         text.style.color = '#000000';
         for (let i=0, len=list.length; i<len; i++){
-            list[i].style['backgroundImage'] = "url(\"img/ul_logo_black.png\")";
+            console.log(list[i].getAttribute('before').getPropertyValue('backgroundImage'))
+///                before.style['backgroundImage'] = "url(\"img/ul_logo_black.png\")";
         }
 
     }
     function MakeTextBlue(text, list) {
         text.style.color = '#4996bf';
         for (let i=0, len=list.length; i<len; i++){
-            list[i].style['backgroundImage'] = "url(\"img/ul_logo_blue.png\")";
+            console.log(list[i].getAttribute('before').getPropertyValue('backgroundImage'))
+///            list[i].style['backgroundImage'] = "url(\"img/ul_logo_blue.png\")";
         }
     }
 
