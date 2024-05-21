@@ -96,7 +96,12 @@ table {
 ul {
     text-align: left;
     margin-top: 5px;
-    list-style-image: url("img/ul_logo.png");
+    /*list-style-image: url("img/ul_logo.png");*/
+}
+
+li {
+    background-image: url("img/ul_logo.png");
+    background-size: 40px;
 }
 
 .box_content_black {
