@@ -102,9 +102,11 @@
 
             <tr>
                 <td class="left_column">
-                    <p style="margin-top: 0">
-                        October 2019 to July 2021
-                    </p>
+                    <div class="date" id="date_master_program">
+                        <p style="margin-top: 0">
+                            October 2019 to July 2021
+                        </p>
+                    </div>
                 </td>
                 <td class="right_column">
                     <div class="info_box_black" id="box_master_program" onmouseover="MakeTextBlack(document.getElementById('LUH_3'))" onmouseleave="MakeTextBlue(document.getElementById('LUH_3'))">
@@ -126,9 +128,11 @@
 
             <tr>
                 <td class="left_column">
-                    <p style="margin-top: 0">
-                        30 July 2019
-                    </p>
+                    <div class="date" id="date_bachelor_degree">
+                        <p style="margin-top: 0">
+                            30 July 2019
+                        </p>
+                    </div>
                 </td>
                 <td style="width: 60%;">
                     <div class="info_box_black" id="box_bachelor_degree" onmouseover="MakeTextBlack(document.getElementById('LUH_4'))" onmouseleave="MakeTextBlue(document.getElementById('LUH_4'))">
@@ -151,9 +155,11 @@
 
             <tr>
                 <td class="left_column">
-                    <p style="margin-top: 0">
-                        October 2016 to September 2019
-                    </p>
+                    <div class="date" id="date_bachelor_program">
+                        <p style="margin-top: 0">
+                            October 2016 to September 2019
+                        </p>
+                    </div>
                 </td>
                 <td class="right_column">
                     <div class="info_box_black" id="box_bachelor_program" onmouseover="MakeTextBlack(document.getElementById('LUH_5'))" onmouseleave="MakeTextBlue(document.getElementById('LUH_5'))">
@@ -175,9 +181,11 @@
 
             <tr>
                 <td class="left_column">
-                    <p style="margin-top: 0">
-                        03 July 2015
-                    </p>
+                    <div class="date" id="date_abitur_degree">
+                        <p style="margin-top: 0">
+                            03 July 2015
+                        </p>
+                    </div>
                 </td>
                 <td class="right_column">
                     <div class="info_box_black" id="box_abitur_degree" onmouseover="MakeTextBlack(document.getElementById('HG_1'))" onmouseleave="MakeTextBlue(document.getElementById('HG_1'))">
@@ -197,9 +205,11 @@
 
             <tr>
                 <td class="left_column">
-                    <p style="margin-top: 0">
-                        2006 to 2015
-                    </p>
+                    <div class="date" id="date_abitur_program">
+                        <p style="margin-top: 0">
+                            2006 to 2015
+                        </p>
+                    </div>
                 </td>
                 <td class="right_column">
                     <div class="info_box_black" id="box_abitur_program" onmouseover="MakeTextBlack(document.getElementById('HG_2'))" onmouseleave="MakeTextBlue(document.getElementById('HG_2'))">
@@ -221,9 +231,11 @@
 
             <tr>
                 <td class="left_column">
-                    <p style="margin-top: 0">
-                        2003 to 2006
-                    </p>
+                    <div class="date" id="date_grundschule_program">
+                        <p style="margin-top: 0">
+                            2003 to 2006
+                        </p>
+                    </div>
                 </td>
                 <td class="right_column">
                     <div class="info_box_black" id="box_grundschule_program" onmouseover="MakeTextBlack(document.getElementById('GS'))" onmouseleave="MakeTextBlue(document.getElementById('GS'))">
@@ -406,10 +418,16 @@
     observer.observe(document.getElementById('box_master_degree'));
     observer.observe(document.getElementById('date_master_degree'));
     observer.observe(document.getElementById('box_master_program'));
+    observer.observe(document.getElementById('date_master_program'));
     observer.observe(document.getElementById('box_bachelor_degree'));
+    observer.observe(document.getElementById('date_bachelor_degree'));
     observer.observe(document.getElementById('box_bachelor_program'));
+    observer.observe(document.getElementById('date_bachelor_program'));
     observer.observe(document.getElementById('box_abitur_degree'));
+    observer.observe(document.getElementById('date_abitur_degree'));
     observer.observe(document.getElementById('box_abitur_program'));
+    observer.observe(document.getElementById('date_abitur_program'));
     observer.observe(document.getElementById('box_grundschule_program'));
+    observer.observe(document.getElementById('date_grundschule_program'));
 
 </script>
