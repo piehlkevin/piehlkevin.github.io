@@ -47,7 +47,7 @@
                     </p>
                 </td>
                 <td style="width: 60%;">
-                    <div class="info_box_blue" id="box_phd_program" onmouseover="MakeTextBlack(document.getElementById('LUH_1'), document.getElementById('list_1'))" onmouseleave="MakeTextBlue(document.getElementById('LUH_1'), document.getElementById('list_1'))">
+                    <div class="info_box_blue" id="box_phd_program" onmouseover="MakeTextBlack(document.getElementById('LUH_1'), document.getElementsByClassName('list_1'))" onmouseleave="MakeTextBlue(document.getElementById('LUH_1'), document.getElementsByClassName('list_1'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
                                 <b>PhD Program Economics and Management</b> <br>
@@ -267,10 +267,10 @@
         if (show_phd_program === 0) {
             show_phd_program = 1;
             document.getElementById('info_phd_program').innerHTML = "Research topics: <br> experimental innovation " +
-                "economics, behavioral economics <br><br> PhD courses: <ul id='list_1'> " +
-                "<li>Machine Learning</li>" +
-                "<li>Applied Game Theory and Information Economics</li>" +
-                "<li>Strategic Experimentation and Learning</li></ul> <br> <i>click to close</i>";
+                "economics, behavioral economics <br><br> PhD courses: <ul> " +
+                "<li class='list_1'>Machine Learning</li>" +
+                "<li class='list_1'>Applied Game Theory and Information Economics</li>" +
+                "<li class='list_1'>Strategic Experimentation and Learning</li></ul> <br> <i>click to close</i>";
         }
         else {
             show_phd_program = 0;
@@ -374,11 +374,16 @@
 
     function MakeTextBlack(text, list) {
         text.style.color = '#000000';
-        list.style.backgroundImage = "url(\"img/ul_logo_black.png\")";
+        for (let i=0, len=list.length; i<len; i++){
+            list[i].style['backgroundImage'] = "url(\"img/ul_logo_black.png\")";
+        }
+
     }
     function MakeTextBlue(text, list) {
         text.style.color = '#4996bf';
-        list.style.backgroundImage = "url(\"img/ul_logo_blue.png\")";
+        for (let i=0, len=list.length; i<len; i++){
+            list[i].style['backgroundImage'] = "url(\"img/ul_logo_blue.png\")";
+        }
     }
 
 </script>
