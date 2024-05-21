@@ -157,7 +157,7 @@ ul li:before {
         animation-duration: 2s;
         animation-iteration-count: 1;
     }
-    .date_enter {
+    .dates_enter {
         animation: dates-appear;
         animation-duration: 2s;
         animation-iteration-count: 1;
