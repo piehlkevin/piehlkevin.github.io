@@ -47,7 +47,7 @@
                     </p>
                 </td>
                 <td style="width: 60%;">
-                    <div class="info_box_blue" id="box_phd_program" onmouseover="MakeTextBlack(document.getElementById('LUH_1'), document.getElementsByClassName('list_1'))" onmouseleave="MakeTextBlue(document.getElementById('LUH_1'), document.getElementsByClassName('list_1'))">
+                    <div class="info_box_blue" id="box_phd_program" onmouseover="MakeTextBlack(document.getElementById('LUH_1'))" onmouseleave="MakeTextBlue(document.getElementById('LUH_1'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
                                 <b>PhD Program Economics and Management</b> <br>
@@ -372,21 +372,11 @@
 
     }
 
-    function MakeTextBlack(text, list) {
+    function MakeTextBlack(text) {
         text.style.color = '#000000';
-        for (let i=0, len=list.length; i<len; i++){
-            console.log(list[i])
-            ///            console.log(list[i].getAttribute('before').getPropertyValue('backgroundImage'))
-///                before.style['backgroundImage'] = "url(\"img/ul_logo_black.png\")";
-        }
-
     }
-    function MakeTextBlue(text, list) {
+    function MakeTextBlue(text) {
         text.style.color = '#4996bf';
-        for (let i=0, len=list.length; i<len; i++){
-            console.log(list[i].getAttribute('before').getPropertyValue('backgroundImage'))
-///            list[i].style['backgroundImage'] = "url(\"img/ul_logo_blue.png\")";
-        }
     }
 
 </script>
