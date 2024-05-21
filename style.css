@@ -128,9 +128,9 @@ ul li:before {
 }
 
 @keyframes boxes-appear {
-    0% {transform: scale(0 0);}
-    25% {transform: scale(1 0.025);}
-    50% {transform: scale(1 1);}
+    0% {transform: scale(0, 0);}
+    25% {transform: scale(1, 0.025);}
+    50% {transform: scale(1, 1);}
 }
 
 @keyframes test {
@@ -140,7 +140,7 @@ ul li:before {
 
 @media (prefers-reduced-motion: no-preference){
     .info_box_black {
-        animation: test 10s infinite;
+        animation: boxes-appear 10s infinite;
     }
     .info_box_blue {
         animation: boxes-appear 10s infinite;
