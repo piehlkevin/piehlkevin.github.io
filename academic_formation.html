@@ -35,11 +35,6 @@
 
         <br>
 
-        <!-- This can be deleted later on: -->
-        <div class="info_box_black" style="align-self: center">
-            Just to test this!
-        </div>
-
         <p style="text-align: center">
             Currently:
         </p>
@@ -395,7 +390,7 @@
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('boxes_appear')
+                entry.target.classList.add('info_box_enter')
             }
         })
     });

@@ -138,7 +138,8 @@ ul li:before {
 }
 
 @media (prefers-reduced-motion: no-preference){
-    .info_box_black {
+    .info_box_enter {
+        animation: boxes-appear;
         animation-duration: 2s;
         animation-iteration-count: 1;
     }
