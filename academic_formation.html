@@ -47,7 +47,7 @@
                     </p>
                 </td>
                 <td style="width: 60%;">
-                    <div class="info_box_blue" id="box_phd_program" onmouseover="ChangeFontColor(document.getElementById('LUH_1'))">
+                    <div class="info_box_blue" id="box_phd_program" onmouseover="MakeTextBlack(document.getElementById('LUH_1'))" onmouseleave="MakeTextBlue(document.getElementById('LUH_1'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
                                 <b>PhD Program Economics and Management</b> <br>
@@ -268,8 +268,11 @@
 
     }
 
-    function ChangeFontColor(text) {
+    function MakeTextBlack(text) {
         text.style.color = '#000000'
+    }
+    function MakeTextBlue(text) {
+        text.style.color = '#4996bf'
     }
 
 </script>
