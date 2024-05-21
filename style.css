@@ -132,11 +132,16 @@ ul li:before {
     50% {transform: scale(1 0.025);}
 }
 
+@keyframes test {
+    0% {background-color: aquamarine}
+    50% {background-color: cadetblue}
+}
+
 @media (prefers-reduced-motion: no-preference){
     .info_box_black {
-        animation: boxes-appear 4s infinite;
+        animation: test 10s infinite;
     }
     .info_box_blue {
-        animation: boxes-appear 4s infinite;
+        animation: boxes-appear 10s infinite;
     }
 }
