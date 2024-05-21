@@ -24,7 +24,7 @@
     <!-- Content: -->
     <div class="container">
         <h1>
-            Academic Formation
+            AAAAAAAcademic Formation
         </h1>
 
         <h3>
@@ -75,7 +75,7 @@
         <table cellspacing="10">
             <tr>
                 <td class="left_column">
-                    <p style="margin-top: 0">
+                    <p style="margin-top: 0" class="date">
                         17 May 2021
                     </p>
                 </td>
@@ -390,8 +390,12 @@
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                console.log(entry.target.getAttribute('class'))
-                entry.target.classList.add('info_box_enter')
+                if (entry.target.getAttribute('class') === 'info_box_black'){
+                    entry.target.classList.add('info_box_enter')
+                }
+                if (entry.target.getAttribute('class') === 'date'){
+                    entry.target.classList.add('dates_enter')
+                }
             }
         })
     });
