@@ -28,6 +28,12 @@
     font-weight: bolder;
 }
 
+.topnav a.name {
+    background-color: black;
+    color: #C2C2C2;
+    float: right;
+}
+
 h1 {
     text-align: center;
     font-size: 80px!important;
