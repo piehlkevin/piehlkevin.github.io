@@ -168,10 +168,10 @@
         if (show_phd_program === 0) {
             show_phd_program = 1;
             document.getElementById('info_phd_program').innerHTML = "Research topics: <br> experimental innovation " +
-                "economics, behavioral economics <br><br> PhD courses: <ul style='text-align: left'> " +
+                "economics, behavioral economics <br><br> PhD courses: <ul> " +
                 "<li>Machine learning</li>" +
                 "<li> Applied game theory and information economics</li>" +
-                "<li>Strategic experimentation and learning</li></ul> <br><br> <i>click to close</i>";
+                "<li>Strategic experimentation and learning</li></ul> <br> <i>click to close</i>";
         }
         else {
             show_phd_program = 0;
@@ -223,8 +223,12 @@
     document.getElementById('box_bachelor_program').onclick = function() {
         if (show_bachelor_program === 0) {
             show_bachelor_program = 1;
-            document.getElementById('info_bachelor_program').innerHTML = "Economic specialization modules: <br> " +
-                "Econometrics, Public Finance, Game Theory, Economic Policy, Economics of Taxation <br><br> <i>click to close</i>";
+            document.getElementById('info_bachelor_program').innerHTML = "Economic specialization modules: <ul> " +
+                "<li>Econometrics</li>" +
+                "<li>Public Finance</li>" +
+                "<li>Game Theory</li>" +
+                "<li>Economic Policy</li>" +
+                "<li>Economics of Taxation</li> <br> <i>click to close</i>";
         }
         else {
             show_bachelor_program = 0;

@@ -91,3 +91,8 @@ table {
 .right_column {
     width: 60%;
 }
+
+ul {
+    text-align: left;
+    margin-top: 5px;
+}
