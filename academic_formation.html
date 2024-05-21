@@ -171,6 +171,52 @@
                 </td>
             </tr>
 
+            <tr>
+                <td class="left_column">
+                    <p style="margin-top: 0">
+                        03 July 2015
+                    </p>
+                </td>
+                <td class="right_column">
+                    <div class="info_box_black" id="box_abitur_degree" onmouseover="MakeTextBlack(document.getElementById('HG_1'))" onmouseleave="MakeTextBlue(document.getElementById('HG_1'))">
+                        <p style="text-align: center">
+                            <p class="box_content_black">
+                                <b>Degree A-Levels</b> <br>
+                                Grade: 2.1 (good)
+                            </p>
+                            <p class="box_content_blue" id="HG_1">
+                                Europaschule Humboldt-Gymnasium | Gifhorn
+                            </p>
+                            <br>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="left_column">
+                    <p style="margin-top: 0">
+                        2006 to 2015
+                    </p>
+                </td>
+                <td class="right_column">
+                    <div class="info_box_black" id="box_abitur_program" onmouseover="MakeTextBlack(document.getElementById('HG_2'))" onmouseleave="MakeTextBlue(document.getElementById('HG_2'))">
+                        <p style="text-align: center">
+                            <p class="box_content_black">
+                                <b>Secondary Level Education</b>
+                            </p>
+                            <p class="box_content_blue" id="HG_2">
+                                Europaschule Humboldt-Gymnasium | Gifhorn
+                            </p>
+                            <br>
+                            <p class="box_content_black">
+                                <a id="info_abitur_program"></a>
+                            </p>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+
         </table>
 
 
@@ -185,6 +231,7 @@
     let show_master_program = 0;
     let show_bachelor_degree = 0;
     let show_bachelor_program = 0;
+    let show_abitur_program = 0;
 
     window.onload = function() {
         document.getElementById('info_phd_program').innerHTML = "<i>click for more information</i>";
@@ -192,7 +239,8 @@
         document.getElementById('info_master_program').innerHTML = "<i>click for more information</i>";
         document.getElementById('info_bachelor_degree').innerHTML = "<i>click for more information</i>";
         document.getElementById('info_bachelor_program').innerHTML = "<i>click for more information</i>";
-    }
+        document.getElementById('info_abitur_program').innerHTML = "<i>click for more information</i>";
+    };
 
     document.getElementById('box_phd_program').onclick = function() {
         if (show_phd_program === 0) {
@@ -282,6 +330,23 @@
         else {
             show_bachelor_program = 0;
             document.getElementById('info_bachelor_program').innerHTML = "<i>click for more information</i>";
+        }
+
+    }
+
+    document.getElementById('box_abitur_program').onclick = function() {
+        if (show_abitur_program === 0) {
+            show_abitur_program = 1;
+            document.getElementById('info_abitur_program').innerHTML = "Examination subjects: <ul> " +
+                "<li>English (Advanced written course)</li>" +
+                "<li>French (Advanced written course)</li>" +
+                "<li>Geography (Advanced written course)</li>" +
+                "<li>Mathematics (Basic written course)</li>" +
+                "<li>German (Basic oral course)</li></ul> <br> <i>click to close</i>";
+        }
+        else {
+            show_abitur_program = 0;
+            document.getElementById('info_abitur_program').innerHTML = "<i>click for more information</i>";
         }
 
     }
