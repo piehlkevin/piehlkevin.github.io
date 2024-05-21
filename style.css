@@ -71,9 +71,6 @@ h3 {
     width: 50%;
     border-radius: 0 35px 35px 35px;
     background-color: #e8e8e8;
-    animation-name: boxes-appear;
-    animation-duration: 4s;
-    animation-iteration-count: 1;
 }
 
 .info_box_black:hover {
@@ -99,8 +96,6 @@ table {
 ul {
     text-align: left;
     margin-top: 5px;
-/*    list-style: none;
-    list-style-image: url("img/ul_logo.png");*/
 }
 ul li {
     list-style: none;
@@ -135,4 +130,10 @@ ul li:before {
 @keyframes boxes-appear {
     0% {transform: scale(0 0.025);}
     50% {transform: scale(1 0.025);}
+}
+
+@media (prefers-reduced-motion: no-preference){
+    .info_box_black {
+        animation: boxes-appear 4s infinite;
+    }
 }
