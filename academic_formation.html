@@ -168,8 +168,9 @@
         if (show_phd_program === 0) {
             show_phd_program = 1;
             document.getElementById('info_phd_program').innerHTML = "Research topics: <br> experimental innovation " +
-                "economics, behavioral economics <br><br> PhD courses: <br> Machine learning, Applied game theory and " +
-                "information economics, Strategic experimentation and learning <br><br> <i>click to close</i>";
+                "economics, behavioral economics <br><br> PhD courses: <br> <ul> <li>Machine learning</li> " +
+                "<li> Applied game theory and information economics</li>" +
+                "<li>Strategic experimentation and learning</li></ul> <br><br> <i>click to close</i>";
         }
         else {
             show_phd_program = 0;
@@ -207,7 +208,7 @@
     document.getElementById('box_bachelor_degree').onclick = function() {
         if (show_bachelor_degree === 0) {
             show_bachelor_degree = 1;
-            document.getElementById('info_bachelor_degree').innerHTML = "Thesis topic: <br> 'An Economic Analysis of" +
+            document.getElementById('info_bachelor_degree').innerHTML = "Thesis topic: <br> 'An Economic Analysis of " +
                 "the Naturalization Policy of the Federal Republic of Germany' <br> Grade: 1.7 (good) <br><br> " +
                 "<i>click to close</i>";
         }
