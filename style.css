@@ -63,6 +63,7 @@ h3 {
 .info_box_blue:hover {
     background-color: #4996bf;
     cursor: pointer;
+    color: #000000!important;
 }
 
 .info_box_black {
@@ -75,6 +76,7 @@ h3 {
 .info_box_black:hover {
     background-color: #4996bf;
     cursor: pointer;
+    color: #000000!important;
 }
 
 table {
@@ -109,8 +111,4 @@ ul {
     margin-top: 5px;
     margin-bottom: 5px;
     color: #4996bf;
-}
-
-.box_content_blue:hover {
-    color: #000000;
 }
