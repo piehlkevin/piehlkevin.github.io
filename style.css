@@ -139,12 +139,12 @@ ul li:before {
 
 @keyframes dates-appear {
     0% {
-        transform-origin: right;
-        transform: scaleX(0);
+        transform-origin: top;
+        transform: scaleY(0);
         color: #4996bf;
     }
     50% {
-        transform: scaleX(1);
+        transform: scaleY(1);
     }
     100% {
         color: #000000;
