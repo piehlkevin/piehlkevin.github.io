@@ -102,7 +102,7 @@ ul {
 ul li {
     list-style: none;
     padding-bottom: 2px;
-    margin-left: 2em;
+    padding-left: 3em;
 }
 
 ul li:before {
@@ -110,10 +110,10 @@ ul li:before {
     display: inline-block;
     height: 1em;
     width: 1em;
-    background-image: url("img/ul_logo.png");
+    background-image: url("img/ul_logo_blue.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 0 0.5em 0 0em;
+    margin: 0 0.5em 0 -1em;
 }
 
 .box_content_black {
