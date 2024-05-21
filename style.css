@@ -71,6 +71,9 @@ h3 {
     width: 50%;
     border-radius: 0 35px 35px 35px;
     background-color: #e8e8e8;
+    animation-name: boxes-appear;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
 }
 
 .info_box_black:hover {
@@ -127,4 +130,9 @@ ul li:before {
     margin-top: 5px;
     margin-bottom: 5px;
     color: #4996bf;
+}
+
+@keyframes boxes-appear {
+    0% {transform: scale(0 1)}
+    50% {transform: scale(1 1)}
 }
