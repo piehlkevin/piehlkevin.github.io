@@ -113,10 +113,8 @@ ul li {
 ul li:before {
     content: '';
     display: inline-block;
-    height: 20px;
-    width: 20px;
-    /*    height: 1em;
-    width: 1em;*/
+    height: 1em;
+    width: 1em;
     background-image: url("img/ul_logo_blue.png");
     background-size: contain;
     background-repeat: no-repeat;
