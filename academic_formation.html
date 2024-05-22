@@ -284,12 +284,16 @@
     document.getElementById('box_phd_program').onclick = function() {
         if (show_phd_program === 0) {
             show_phd_program = 1;
-            document.getElementById('info_phd_program').innerHTML = "<hr>Research topics: <ul>" +
+            document.getElementById('info_phd_program').innerHTML = "<hr>Research areas: <ul>" +
                 "<li>Experimental Innovation Economics</li>" +
-                "<li>Behavioral Economics </li></ul> <hr> PhD courses: <ul> " +
+                "<li>Behavioral Economics </li></ul> <hr> Elective modules: <ul> " +
                 "<li>Machine Learning</li>" +
                 "<li>Applied Game Theory and Information Economics</li>" +
-                "<li>Strategic Experimentation and Learning</li></ul> <br> <i>click to close</i>";
+                "<li>Strategic Experimentation and Learning</li></ul> <hr> Further voluntary PhD courses: <ul>" +
+                "<li>University Didactic Certificate Program Professionalization of Teaching ('Pro Lehre')</li>" +
+                "<li>Economics of Ideas, Science and Innovation (online PhD lecture)</li>" +
+                "<li>Behavioral & Experimental Economics (PhD course, University Hamburg)</li> </ul> <br> " +
+                "<i>click to close</i>";
         }
         else {
             show_phd_program = 0;
