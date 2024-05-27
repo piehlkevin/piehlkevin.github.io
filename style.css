@@ -3,6 +3,16 @@
     font-size: 20px;
 }
 
+::selection {
+    color: #FFFFFF;
+    background-color: #4996bf;
+}
+
+::-moz-selection {
+    color: #FFFFFF;
+    background-color: #4996bf;
+}
+
 .topnav {
     background-color: black;
     overflow: hidden;
