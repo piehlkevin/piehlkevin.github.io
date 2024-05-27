@@ -109,10 +109,11 @@ ul li {
     display: flex;
     align-items: center;
 }
+/*
 ul li:before {
     content: "\2023 \0020";
 }
-/*
+
 2023
 203A
 25BA
