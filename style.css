@@ -150,15 +150,20 @@ footer {
 }
 
 footer a.kevin {
-    width: 50%;
+    float: left;
     text-align: center;
+    color: #FFFFFF;
 }
 
 footer a.impressum {
-    width: 50%;
+    float: right;
     text-align: center;
-    text-underline: black;
-    color: black;
+    text-underline: #FFFFFF;
+    color: #FFFFFF;
+}
+
+body {
+    padding-bottom: 50px;
 }
 
 @keyframes boxes-appear {
