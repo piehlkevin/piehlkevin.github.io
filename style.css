@@ -145,18 +145,18 @@ ul li:before {
 
 footer {
     background-color: #4996bf;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 footer a.kevin {
-    padding-left: 10px;
+    padding-left: 20px;
     float: left;
     color: #FFFFFF;
 }
 
 footer a.impressum {
-    padding-right: 10px;
+    padding-right: 20px;
     float: right;
     text-underline: #FFFFFF;
     color: #FFFFFF;
