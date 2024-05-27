@@ -145,6 +145,7 @@ ul li:before {
 
 footer {
     background-color: #4996bf;
+    margin-top: 10px;
 }
 
 @keyframes boxes-appear {
