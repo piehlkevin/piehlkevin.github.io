@@ -111,7 +111,8 @@ ul li {
 }
 
 ul li:before {
-    content: "\203A \0020";
+    content: "\25BA \0020";
+    vertical-align: top;
 }
 /*
 2023
