@@ -150,13 +150,13 @@ footer {
 }
 
 footer a.kevin {
-    padding-left: 20px;
+    padding-left: 10px;
     float: left;
     color: #FFFFFF;
 }
 
 footer a.impressum {
-    padding-right: 20px;
+    padding-right: 10px;
     float: right;
     text-underline: #FFFFFF;
     color: #FFFFFF;
