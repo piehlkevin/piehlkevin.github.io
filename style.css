@@ -145,7 +145,8 @@ ul li:before {
 
 footer {
     background-color: #4996bf;
-    margin-top: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 footer a.kevin {
