@@ -160,6 +160,7 @@ footer a.impressum {
     float: right;
     text-underline: #FFFFFF;
     color: #FFFFFF;
+    font-weight: bold;
 }
 
 @keyframes boxes-appear {
