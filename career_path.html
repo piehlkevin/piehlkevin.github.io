@@ -118,6 +118,77 @@
                     </div>
                 </td>
             </tr>
+
+            <tr>
+                <td class="left_column">
+                    <div class="date" id="date_student_assistant_HSP">
+                        <p style="margin-top: 0">
+                            01 October 2016 to 30 June 2020
+                        </p>
+                    </div>
+                </td>
+                <td style="width: 60%;">
+                    <div class="info_box_black" id="box_student_asistant_HSP" onmouseover="MakeTextBlack(document.getElementById('HSP'))" onmouseleave="MakeTextBlue(document.getElementById('HSP'))">
+                        <p style="text-align: center">
+                            <p class="box_content_black">
+                                <b>Student Assistant</b> <br>
+                                Contact: Tim Fischer
+                            </p>
+                            <p class="box_content_blue" id="HSP">
+                                University Sports Center <br>
+                                Gottfried Wilhelm Leibniz University • Hanover
+                            </p>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="left_column">
+                    <div class="date" id="date_FSJ">
+                        <p style="margin-top: 0">
+                            15 September 2015 to 14 August 2016
+                        </p>
+                    </div>
+                </td>
+                <td style="width: 60%;">
+                    <div class="info_box_black" id="box_FSJ" onmouseover="MakeTextBlack(document.getElementById('FSJ'))" onmouseleave="MakeTextBlue(document.getElementById('FSJ'))">
+                        <p style="text-align: center">
+                            <p class="box_content_black">
+                                <b>Voluntary Work in Sports</b> <br>
+                                Contact: Tim Fischer
+                            </p>
+                            <p class="box_content_blue" id="FSJ">
+                                University Sports Center <br>
+                                Gottfried Wilhelm Leibniz University • Hanover
+                            </p>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="left_column">
+                    <div class="date" id="date_stadt_events">
+                        <p style="margin-top: 0">
+                            15 September 2015 to 14 August 2016
+                        </p>
+                    </div>
+                </td>
+                <td style="width: 60%;">
+                    <div class="info_box_black" id="box_stadt_events" onmouseover="MakeTextBlack(document.getElementById('stadt_events'))" onmouseleave="MakeTextBlue(document.getElementById('stadt_events'))">
+                        <p style="text-align: center">
+                            <p class="box_content_black">
+                                <b>Voluntary Internship</b> <br>
+                                Contact: Dipl. Soz.-Wiss. Mario Giovelli
+                            </p>
+                            <p class="box_content_blue" id="stadt_events">
+                                Stadt Events GmbH • Hanover
+                            </p>
+                        </p>
+                    </div>
+                </td>
+            </tr>
         </table>
     </div>
 
@@ -173,4 +244,10 @@
 
     observer.observe(document.getElementById('box_student_asistant_MAK'));
     observer.observe(document.getElementById('date_student_assistant_MAK'));
+    observer.observe(document.getElementById('box_student_asistant_HSP'));
+    observer.observe(document.getElementById('date_student_assistant_HSP'));
+    observer.observe(document.getElementById('box_FSJ'));
+    observer.observe(document.getElementById('date_FSJ'));
+    observer.observe(document.getElementById('box_stadt_events'));
+    observer.observe(document.getElementById('date_stadt_events'));
 </script>
