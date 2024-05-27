@@ -162,10 +162,6 @@ footer a.impressum {
     color: #FFFFFF;
 }
 
-body {
-    padding-bottom: 50px;
-}
-
 @keyframes boxes-appear {
     0% {
         transform-origin: top;
