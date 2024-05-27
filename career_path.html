@@ -60,13 +60,65 @@
 
         <br>
 
-        <div>
-            <p style="text-align: center">
-              <i>page will be added soon</i>
-            </p>
+        <p style="text-align: center">
+            Currently:
+        </p>
 
-            <br>
-        </div>
+        <table cellspacing="10">
+            <tr>
+                <td style="width: 40%; text-align: right; vertical-align: top;">
+                    <p style="margin-top: 0">
+                        since 15 July 2021
+                    </p>
+                </td>
+                <td style="width: 60%;">
+                    <div class="info_box_blue" onmouseover="MakeTextBlack(document.getElementById('WIPOL'))" onmouseleave="MakeTextBlue(document.getElementById('WIPOL'))">
+                        <p style="text-align: center">
+                            <p class="box_content_black">
+                                <b>PhD Candidate</b> <br>
+                                Contact: Prof. Dr. Marina Schröder
+                            </p>
+                            <p class="box_content_blue" id="WIPOL">
+                                Institute of Economic Policy <br>
+                                Gottfried Wilhelm Leibniz University • Hanover
+                            </p>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <br><br>
+
+        <p style="text-align: center">
+            Previously:
+        </p>
+
+        <table cellspacing="10">
+            <tr>
+                <td class="left_column">
+                    <div class="date" id="date_student_assistant_MAK">
+                        <p style="margin-top: 0">
+                            01 September 2019 to 14 July 2021
+                        </p>
+                    </div>
+                </td>
+                <td style="width: 60%;">
+                    <div class="info_box_black" id="box_student_asistant_MAK" onmouseover="MakeTextBlack(document.getElementById('MAK'))" onmouseleave="MakeTextBlue(document.getElementById('MAK'))">
+                        <p style="text-align: center">
+                            <p class="box_content_black">
+                                <b>Student Assistant</b> <br>
+                                Contact: Prof. Dr. Martin Gassebner
+                            </p>
+                            <p class="box_content_blue" id="MAK">
+                                Institute of Macroeconomics <br>
+                                Gottfried Wilhelm Leibniz University • Hanover
+                            </p>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
 
     <br><br>
@@ -97,3 +149,28 @@
 </footer>
 
 </html>
+
+<script type="text/javascript">
+    function MakeTextBlack(text) {
+        text.style.color = '#000000';
+    }
+    function MakeTextBlue(text) {
+        text.style.color = '#4996bf';
+    }
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                if (entry.target.getAttribute('class') === 'info_box_black'){
+                    entry.target.classList.add('info_box_enter')
+                }
+                if (entry.target.getAttribute('class') === 'date'){
+                    entry.target.classList.add('dates_enter')
+                }
+            }
+        })
+    });
+
+    observer.observe(document.getElementById('box_student_asistant_MAK'));
+    observer.observe(document.getElementById('date_student_assistant_MAK'));
+</script>
