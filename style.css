@@ -148,6 +148,18 @@ footer {
     margin-top: 10px;
 }
 
+footer a.kevin {
+    width: 50%;
+    text-align: center;
+}
+
+footer a.impressum {
+    width: 50%;
+    text-align: center;
+    text-underline: black;
+    color: black;
+}
+
 @keyframes boxes-appear {
     0% {
         transform-origin: top;
