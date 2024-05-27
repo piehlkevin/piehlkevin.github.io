@@ -153,9 +153,18 @@ footer a.kevin {
     padding-left: 20px;
     float: left;
     color: #FFFFFF;
+    font-weight: lighter;
 }
 
 footer a.impressum {
+    padding-right: 10px;
+    float: right;
+    text-underline: #FFFFFF;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+footer a.github {
     padding-right: 20px;
     float: right;
     text-underline: #FFFFFF;
