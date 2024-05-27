@@ -107,12 +107,11 @@ ul li {
     list-style: none;
     padding-bottom: 2px;
     display: flex;
-    align-items: center;
 }
 
 ul li:before {
     content: "\25BA \0020";
-    vertical-align: top;
+    margin: 0 0 0 -1em;
 }
 /*
 2023
