@@ -231,3 +231,38 @@
 </footer>
 
 </html>
+
+<script type="text/javascript">
+    function MakeTextBlack(text) {
+        text.style.color = '#000000';
+    }
+    function MakeTextBlue(text) {
+        text.style.color = '#4996bf';
+    }
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                if (entry.target.getAttribute('class') === 'info_box_black'){
+                    entry.target.classList.add('info_box_enter')
+                }
+                if (entry.target.getAttribute('class') === 'date'){
+                    entry.target.classList.add('dates_enter')
+                }
+            }
+        })
+    });
+
+    observer.observe(document.getElementById('box_master'));
+    observer.observe(document.getElementById('date_master'));
+    observer.observe(document.getElementById('box_deanslist_1'));
+    observer.observe(document.getElementById('date_deanslist_1'));
+    observer.observe(document.getElementById('box_deanslist_2'));
+    observer.observe(document.getElementById('date_deanslist_2'));
+    observer.observe(document.getElementById('box_deanslist_3'));
+    observer.observe(document.getElementById('date_deanslist_3'));
+    observer.observe(document.getElementById('box_deanslist_4'));
+    observer.observe(document.getElementById('date_deanslist_4'));
+    observer.observe(document.getElementById('box_bachelor'));
+    observer.observe(document.getElementById('date_bachelor'));
+</script>
