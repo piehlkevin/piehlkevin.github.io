@@ -143,6 +143,10 @@ ul li:before {
     color: #4996bf;
 }
 
+footer {
+    background-color: #4996bf;
+}
+
 @keyframes boxes-appear {
     0% {
         transform-origin: top;
