@@ -118,7 +118,7 @@ ul li:before {
     background-image: url("img/ul_logo_blue.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 0 0.5em 0 -1em;
+    margin: 0 0 0 -1em;
 }
 
 .box_content_black {
