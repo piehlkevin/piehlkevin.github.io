@@ -105,8 +105,12 @@ table {
     vertical-align: top;
 }
 
+.mid_column {
+    width: 70%;
+}
+
 .right_column {
-    width: 50%;
+    width: 5%;
 }
 
 ul {

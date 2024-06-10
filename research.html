@@ -53,20 +53,75 @@
         </h1>
 
         <h3>
-            coming soon!
+            Below you find information on my research projects.
         </h3>
 
         <hr>
 
         <br>
 
-        <div>
-            <p style="text-align: center">
-              <i>page will be added soon</i>
-            </p>
+        <p style="text-align: center">
+            Work in progress:
+        </p>
 
-            <br>
-        </div>
+        <table cellspacing="10">
+            <tr>
+                <td class="left_column">
+                    <div class="date" id="date_project_1">
+                        <p style="margin-top: 0">
+
+                        </p>
+                    </div>
+                </td>
+                <td class="mid_column">
+                    <div class="info_box_black" id="box_project_1" onmouseover="MakeTextBlack(document.getElementById('project_1'))" onmouseleave="MakeTextBlue(document.getElementById('project_1'))">
+                        <p style="text-align: center">
+                            <p class="box_content_black">
+                                <b>Input- versus Output-based Incentives in Innovation — An Experimental Analysis</b> <br>
+                                Collaborators: Kay Blaufus and Marina Schröder <br><br>
+                                <i>more information available soon</i> <br>
+                            </p>
+                        </p>
+                    </div>
+                </td>
+                <td class="right_column">
+                    <div>
+                        <p>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="left_column">
+                    <div class="date" id="date_project_2">
+                        <p style="margin-top: 0">
+
+                        </p>
+                    </div>
+                </td>
+                <td class="mid_column">
+                    <div class="info_box_black" id="box_project_2" onmouseover="MakeTextBlack(document.getElementById('project_2'))" onmouseleave="MakeTextBlue(document.getElementById('project_2'))">
+                        <p style="text-align: center">
+                            <p class="box_content_black">
+                                <b>Input versus Output Contingent Tax Incentives and Venture Capital</b> <br>
+                                Collaborators: Kay Blaufus and Marina Schröder <br><br>
+                                <i>more information available soon</i> <br>
+                            </p>
+                        </p>
+                    </div>
+                </td>
+                <td class="right_column">
+                    <div>
+                        <p>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+
+
+
+        </table>
     </div>
 
     <br><br>
@@ -97,3 +152,30 @@
 </footer>
 
 </html>
+
+<script type="text/javascript">
+    function MakeTextBlack(text) {
+        text.style.color = '#000000';
+    }
+    function MakeTextBlue(text) {
+        text.style.color = '#4996bf';
+    }
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                if (entry.target.getAttribute('class') === 'info_box_black'){
+                    entry.target.classList.add('info_box_enter')
+                }
+                if (entry.target.getAttribute('class') === 'date'){
+                    entry.target.classList.add('dates_enter')
+                }
+            }
+        })
+    });
+
+    observer.observe(document.getElementById('box_project_1'));
+    observer.observe(document.getElementById('date_project_1'));
+    observer.observe(document.getElementById('box_project_2'));
+    observer.observe(document.getElementById('date_project_2'));
+</script>
