@@ -1,5 +1,5 @@
 * {
-    font-family: 'Verdana';
+    font-family: 'Helvetica';
     font-size: 20px;
 }
 
@@ -120,8 +120,8 @@ ul li {
 }
 
 ul li:before {
-    content: "\25BA \0020 \0020";
-    margin: 0 0 0 -1em;
+    content: "\25BA";
+    margin: 0 1em 0 -1em;
 }
 /*
 2023
