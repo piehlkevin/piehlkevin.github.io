@@ -186,20 +186,27 @@ footer {
     padding-bottom: 25px;
 }
 
-footer a.kevin {
-    padding-left: 20px;
+footer a {
     float: left;
+    color: #FFFFFF;
+    font-weight: lighter;
+    position: relative;
+    display: inline-block;
+}
+
+footer a.divider {
+    padding-left: 10px;
+    padding-right: 10px;
     color: #FFFFFF;
     font-weight: lighter;
 }
 
 footer a.impressum {
     padding-right: 40px;
-    float: right;
+    float: right!important;
     text-underline: #FFFFFF;
     text-underline-style: thick;
-    color: #FFFFFF;
-    font-weight: bolder;
+    font-weight: bolder!important;
 }
 
 footer a.github {
@@ -208,6 +215,41 @@ footer a.github {
     text-underline: #FFFFFF;
     color: #FFFFFF;
     font-weight: bold;
+}
+
+footer a .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #C2C2C2;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -100px;
+    position: absolute;
+    z-index: 1;
+    font-weight: lighter;
+}
+
+footer a .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #C2C2C2 transparent transparent transparent;
+}
+
+footer img:hover {
+    cursor: pointer;
+}
+
+footer a:hover .tooltiptext {
+    visibility: visible;
 }
 
 @keyframes boxes-appear {
