@@ -74,7 +74,7 @@
                     </div>
                 </td>
                 <td class="mid_column">
-                    <div class="info_box_blue" id="box_phd_program" onmouseover="MakeTextBlack(document.getElementById('LUH_1'))" onmouseleave="MakeTextBlue(document.getElementById('LUH_1'))">
+                    <div class="info_box_blue_more" id="box_phd_program" onmouseover="MakeTextBlack(document.getElementById('LUH_1'))" onmouseleave="MakeTextBlue(document.getElementById('LUH_1'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
                                 <b>PhD Program Economics and Management</b> <br>
@@ -115,7 +115,7 @@
                     </div>
                 </td>
                 <td class="mid_column">
-                    <div class="info_box_black" id="box_master_degree" onmouseover="MakeTextBlack(document.getElementById('LUH_2'))" onmouseleave="MakeTextBlue(document.getElementById('LUH_2'))">
+                    <div class="info_box_black_more" id="box_master_degree" onmouseover="MakeTextBlack(document.getElementById('LUH_2'))" onmouseleave="MakeTextBlue(document.getElementById('LUH_2'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
                                 <b>Degree Master of Science (M.Sc.)</b> <br>
@@ -148,7 +148,7 @@
                     </div>
                 </td>
                 <td class="mid_column">
-                    <div class="info_box_black" id="box_master_program" onmouseover="MakeTextBlack(document.getElementById('LUH_3'))" onmouseleave="MakeTextBlue(document.getElementById('LUH_3'))">
+                    <div class="info_box_black_more" id="box_master_program" onmouseover="MakeTextBlack(document.getElementById('LUH_3'))" onmouseleave="MakeTextBlue(document.getElementById('LUH_3'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
                                 <b>Studies of Economics and Management (M.Sc.)</b>
@@ -180,7 +180,7 @@
                     </div>
                 </td>
                 <td class="mid_column">
-                    <div class="info_box_black" id="box_bachelor_degree" onmouseover="MakeTextBlack(document.getElementById('LUH_4'))" onmouseleave="MakeTextBlue(document.getElementById('LUH_4'))">
+                    <div class="info_box_black_more" id="box_bachelor_degree" onmouseover="MakeTextBlack(document.getElementById('LUH_4'))" onmouseleave="MakeTextBlue(document.getElementById('LUH_4'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
                                 <b>Degree Bachelor of Science (B.Sc.)</b> <br>
@@ -213,7 +213,7 @@
                     </div>
                 </td>
                 <td class="mid_column">
-                    <div class="info_box_black" id="box_bachelor_program" onmouseover="MakeTextBlack(document.getElementById('LUH_5'))" onmouseleave="MakeTextBlue(document.getElementById('LUH_5'))">
+                    <div class="info_box_black_more" id="box_bachelor_program" onmouseover="MakeTextBlack(document.getElementById('LUH_5'))" onmouseleave="MakeTextBlue(document.getElementById('LUH_5'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
                                 <b>Studies of Economics and Management (B.Sc.)</b>
@@ -264,7 +264,7 @@
                     </div>
                 </td>
                 <td class="mid_column">
-                    <div class="info_box_black" id="box_abitur_degree" onmouseover="MakeTextBlack(document.getElementById('HG_1'))" onmouseleave="MakeTextBlue(document.getElementById('HG_1'))">
+                    <div class="info_box_black_less" id="box_abitur_degree" onmouseover="MakeTextBlack(document.getElementById('HG_1'))" onmouseleave="MakeTextBlue(document.getElementById('HG_1'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
                                 <b>Degree A-Levels</b> <br>
@@ -294,7 +294,7 @@
                     </div>
                 </td>
                 <td class="mid_column">
-                    <div class="info_box_black" id="box_abitur_program" onmouseover="MakeTextBlack(document.getElementById('HG_2'))" onmouseleave="MakeTextBlue(document.getElementById('HG_2'))">
+                    <div class="info_box_black_more" id="box_abitur_program" onmouseover="MakeTextBlack(document.getElementById('HG_2'))" onmouseleave="MakeTextBlue(document.getElementById('HG_2'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
                                 <b>Second Level Education</b>
@@ -326,7 +326,7 @@
                     </div>
                 </td>
                 <td class="mid_column">
-                    <div class="info_box_black" id="box_grundschule_program" onmouseover="MakeTextBlack(document.getElementById('GS'))" onmouseleave="MakeTextBlue(document.getElementById('GS'))">
+                    <div class="info_box_black_less" id="box_grundschule_program" onmouseover="MakeTextBlack(document.getElementById('GS'))" onmouseleave="MakeTextBlue(document.getElementById('GS'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
                                 <b>First Level Education</b>
@@ -535,7 +535,7 @@
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                if (entry.target.getAttribute('class') === 'info_box_black'){
+                if (entry.target.getAttribute('class') === 'info_box_black_more' || entry.target.getAttribute('class') === 'info_box_black_less'){
                     entry.target.classList.add('info_box_enter')
                 }
                 if (entry.target.getAttribute('class') === 'date'){

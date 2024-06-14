@@ -74,7 +74,7 @@
                     </div>
                 </td>
                 <td class="mid_column">
-                    <div class="info_box_black" id="box_project_1" onmouseover="MakeTextBlack(document.getElementById('project_1'))" onmouseleave="MakeTextBlue(document.getElementById('project_1'))">
+                    <div class="info_box_black_less" id="box_project_1" onmouseover="MakeTextBlack(document.getElementById('project_1'))" onmouseleave="MakeTextBlue(document.getElementById('project_1'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
                                 <b>Input- versus Output-based Incentives in Innovation — An Experimental Analysis</b> <br>
@@ -101,7 +101,7 @@
                     </div>
                 </td>
                 <td class="mid_column">
-                    <div class="info_box_black" id="box_project_2" onmouseover="MakeTextBlack(document.getElementById('project_2'))" onmouseleave="MakeTextBlue(document.getElementById('project_2'))">
+                    <div class="info_box_black_less" id="box_project_2" onmouseover="MakeTextBlack(document.getElementById('project_2'))" onmouseleave="MakeTextBlue(document.getElementById('project_2'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
                                 <b>Input versus Output Contingent Tax Incentives and Venture Capital</b> <br>
@@ -164,7 +164,7 @@
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                if (entry.target.getAttribute('class') === 'info_box_black'){
+                if (entry.target.getAttribute('class') === 'info_box_black_more' || entry.target.getAttribute('class') === 'info_box_black_less'){
                     entry.target.classList.add('info_box_enter')
                 }
                 if (entry.target.getAttribute('class') === 'date'){

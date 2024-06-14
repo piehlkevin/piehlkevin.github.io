@@ -74,7 +74,7 @@
                     </div>
                 </td>
                 <td class="mid_column">
-                    <div class="info_box_blue" onmouseover="MakeTextBlack(document.getElementById('WIPOL'))" onmouseleave="MakeTextBlue(document.getElementById('WIPOL'))">
+                    <div class="info_box_blue_less" onmouseover="MakeTextBlack(document.getElementById('WIPOL'))" onmouseleave="MakeTextBlue(document.getElementById('WIPOL'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
                                 <b>PhD Candidate</b> <br>
@@ -112,7 +112,7 @@
                     </div>
                 </td>
                 <td class="mid_column">
-                    <div class="info_box_black" id="box_student_asistant_MAK" onmouseover="MakeTextBlack(document.getElementById('MAK'))" onmouseleave="MakeTextBlue(document.getElementById('MAK'))">
+                    <div class="info_box_black_less" id="box_student_asistant_MAK" onmouseover="MakeTextBlack(document.getElementById('MAK'))" onmouseleave="MakeTextBlue(document.getElementById('MAK'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
                                 <b>Student Assistant</b> <br>
@@ -142,7 +142,7 @@
                     </div>
                 </td>
                 <td class="mid_column">
-                    <div class="info_box_black" id="box_student_asistant_HSP" onmouseover="MakeTextBlack(document.getElementById('HSP'))" onmouseleave="MakeTextBlue(document.getElementById('HSP'))">
+                    <div class="info_box_black_less" id="box_student_asistant_HSP" onmouseover="MakeTextBlack(document.getElementById('HSP'))" onmouseleave="MakeTextBlue(document.getElementById('HSP'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
                                 <b>Student Assistant</b> <br>
@@ -172,7 +172,7 @@
                     </div>
                 </td>
                 <td class="mid_column">
-                    <div class="info_box_black" id="box_FSJ" onmouseover="MakeTextBlack(document.getElementById('FSJ'))" onmouseleave="MakeTextBlue(document.getElementById('FSJ'))">
+                    <div class="info_box_black_less" id="box_FSJ" onmouseover="MakeTextBlack(document.getElementById('FSJ'))" onmouseleave="MakeTextBlue(document.getElementById('FSJ'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
                                 <b>Voluntary Work in Sports</b> <br>
@@ -202,7 +202,7 @@
                     </div>
                 </td>
                 <td class="mid_column">
-                    <div class="info_box_black" id="box_stadt_events" onmouseover="MakeTextBlack(document.getElementById('stadt_events'))" onmouseleave="MakeTextBlue(document.getElementById('stadt_events'))">
+                    <div class="info_box_black_less" id="box_stadt_events" onmouseover="MakeTextBlack(document.getElementById('stadt_events'))" onmouseleave="MakeTextBlue(document.getElementById('stadt_events'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
                                 <b>Internship</b> <br>
@@ -231,7 +231,7 @@
                     </div>
                 </td>
                 <td class="mid_column">
-                    <div class="info_box_black" id="box_IAV" onmouseover="MakeTextBlack(document.getElementById('IAV'))" onmouseleave="MakeTextBlue(document.getElementById('IAV'))">
+                    <div class="info_box_black_less" id="box_IAV" onmouseover="MakeTextBlack(document.getElementById('IAV'))" onmouseleave="MakeTextBlue(document.getElementById('IAV'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
                                 <b>Two-Week Internship</b> <br>
@@ -292,7 +292,7 @@
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                if (entry.target.getAttribute('class') === 'info_box_black'){
+                if (entry.target.getAttribute('class') === 'info_box_black_more' || entry.target.getAttribute('class') === 'info_box_black_less'){
                     entry.target.classList.add('info_box_enter')
                 }
                 if (entry.target.getAttribute('class') === 'date'){
