@@ -62,10 +62,12 @@ h3 {
     width: 80%;
     border-radius: 0 35px 35px 35px;
     background-color: #e8e8e8;
+    transition: background-color 0.25s;
 }
 
 #contact_box:hover {
     background-color: #4996bf;
+    transition: background-color 0.25s;
     cursor: pointer;
 }
 
@@ -74,6 +76,7 @@ h3 {
     width: 100%;
     border-radius: 0 35px 35px 35px;
     background-color: #e8e8e8;
+    transition: background-color 0.25s;
 }
 
 .info_box_blue_less {
@@ -81,16 +84,19 @@ h3 {
     width: 100%;
     border-radius: 0 35px 35px 35px;
     background-color: #e8e8e8;
+    transition: background-color 0.25s;
 }
 
 .info_box_blue_more:hover {
     background-color: #4996bf;
+    transition: background-color 0.25s;
     cursor: pointer;
     color: #000000!important;
 }
 
 .info_box_blue_less:hover {
     background-color: #4996bf;
+    transition: background-color 0.25s;
     color: #000000!important;
 }
 
@@ -99,6 +105,7 @@ h3 {
     width: 100%;
     border-radius: 0 35px 35px 35px;
     background-color: #e8e8e8;
+    transition: background-color 0.25s;
 }
 
 .info_box_black_less {
@@ -106,15 +113,18 @@ h3 {
     width: 100%;
     border-radius: 0 35px 35px 35px;
     background-color: #e8e8e8;
+    transition: background-color 0.25s;
 }
 
 .info_box_black_more:hover {
     background-color: #4996bf;
     cursor: pointer;
+    transition: background-color 0.25s;
 }
 
 .info_box_black_less:hover {
     background-color: #4996bf;
+    transition: background-color 0.25s;
 }
 
 table {
@@ -150,22 +160,7 @@ ul li:before {
     content: "\25BA";
     margin: 0 1em 0 -1em;
 }
-/*
-2023
-203A
-25BA
 
-ul li:before {
-    content: '';
-    display: inline-block;
-    height: 1em;
-    width: 1em;
-    background-image: url("img/ul_logo_blue.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 0 0 0 -1em;
-}
-*/
 .box_content_black {
     text-align: center;
     margin-top: 5px;
@@ -231,6 +226,8 @@ footer a .tooltiptext {
     position: absolute;
     z-index: 1;
     font-weight: lighter;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
 footer a .tooltiptext::after {
@@ -250,6 +247,7 @@ footer img:hover {
 
 footer a:hover .tooltiptext {
     visibility: visible;
+    opacity: 1;
 }
 
 @keyframes boxes-appear {
