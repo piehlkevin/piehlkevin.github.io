@@ -5,6 +5,7 @@
 
 window.onload = function() {
     const d = new Date();
+    console.log(d);
     const year = d.getFullYear();
     const month = d.getMonth();
     const day = d.getDay();
