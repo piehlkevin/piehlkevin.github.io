@@ -95,8 +95,8 @@ const my_boxes = [
     // Misc: (none)
 ]
 
-for (let x in my_boxes) {
-    if (typeof document.getElementById(x) != "undefined") {
+for (let x of my_boxes) {
+    if (document.getElementById(x)) {
         observer.observe(document.getElementById(x))
     }
 }
@@ -104,68 +104,6 @@ for (let x in my_boxes) {
 
 
 
-// Welcome: (None)
-// Academic formation:
-
-observer.observe(document.getElementById('box_phd_program'));
-observer.observe(document.getElementById('box_master_degree'));
-observer.observe(document.getElementById('date_master_degree'));
-observer.observe(document.getElementById('box_master_program'));
-observer.observe(document.getElementById('date_master_program'));
-observer.observe(document.getElementById('box_bachelor_degree'));
-observer.observe(document.getElementById('date_bachelor_degree'));
-observer.observe(document.getElementById('box_bachelor_program'));
-observer.observe(document.getElementById('date_bachelor_program'));
-observer.observe(document.getElementById('box_abitur_degree'));
-observer.observe(document.getElementById('date_abitur_degree'));
-observer.observe(document.getElementById('box_abitur_program'));
-observer.observe(document.getElementById('date_abitur_program'));
-observer.observe(document.getElementById('box_grundschule_program'));
-observer.observe(document.getElementById('date_grundschule_program'));
-// Career path:
-observer.observe(document.getElementById('box_student_asistant_MAK'));
-observer.observe(document.getElementById('date_student_assistant_MAK'));
-observer.observe(document.getElementById('box_student_asistant_HSP'));
-observer.observe(document.getElementById('date_student_assistant_HSP'));
-observer.observe(document.getElementById('box_FSJ'));
-observer.observe(document.getElementById('date_FSJ'));
-observer.observe(document.getElementById('box_stadt_events'));
-observer.observe(document.getElementById('date_stadt_events'));
-observer.observe(document.getElementById('box_IAV'));
-observer.observe(document.getElementById('date_IAV'));
-// Grants & Awards:
-observer.observe(document.getElementById('box_master'));
-observer.observe(document.getElementById('date_master'));
-observer.observe(document.getElementById('box_deanslist_1'));
-observer.observe(document.getElementById('date_deanslist_1'));
-observer.observe(document.getElementById('box_deanslist_2'));
-observer.observe(document.getElementById('date_deanslist_2'));
-observer.observe(document.getElementById('box_deanslist_3'));
-observer.observe(document.getElementById('date_deanslist_3'));
-observer.observe(document.getElementById('box_deanslist_4'));
-observer.observe(document.getElementById('date_deanslist_4'));
-observer.observe(document.getElementById('box_bachelor'));
-observer.observe(document.getElementById('date_bachelor'));
-// Research:
-observer.observe(document.getElementById('box_project_1'));
-observer.observe(document.getElementById('box_project_2'));
-// Teaching:
-observer.observe(document.getElementById('winter_2324'));
-observer.observe(document.getElementById('exercise_winter_2324'));
-observer.observe(document.getElementById('summer_2023'));
-observer.observe(document.getElementById('exercise_summer_2023'));
-observer.observe(document.getElementById('winter_2223'));
-observer.observe(document.getElementById('exercise_winter_2223'));
-observer.observe(document.getElementById('seminar_winter_2223'));
-observer.observe(document.getElementById('summer_2022'));
-observer.observe(document.getElementById('exercise_summer_2022'));
-observer.observe(document.getElementById('seminar_summer_2022'));
-observer.observe(document.getElementById('winter_2122'));
-observer.observe(document.getElementById('exercise_winter_2122'));
-observer.observe(document.getElementById('seminar1_winter_2122'));
-observer.observe(document.getElementById('seminar2_winter_2122'));
-// Engagement: (none)
-// Misc: (none)
 
 
 // Insert the "click for more information" in the beginning:
@@ -177,6 +115,13 @@ function ClickForInformation() {
     document.getElementById('info_bachelor_program').innerHTML = "<i>click for more information</i>";
     document.getElementById('info_abitur_program').innerHTML = "<i>click for more information</i>";
 }
+
+// Execute these two function on load:
+window.onload = function() {
+    PasteChangeDate();
+    ClickForInformation();
+};
+
 
 // Add the text when clicking on the boxes:
 let show_phd_program = 0;
@@ -313,9 +258,3 @@ document.getElementById('box_abitur_program').onclick = function() {
     }
 
 }
-
-
-window.onload = function() {
-    PasteChangeDate();
-    ClickForInformation();
-};
