@@ -31,8 +31,82 @@ const observer = new IntersectionObserver(entries => {
     })
 });
 
+const my_boxes = [
+    // Welcome: (none)
+    // Academic formation:
+    'box_phd_program',
+    'box_master_degree',
+    'date_master_degree',
+    'box_master_program',
+    'date_master_program',
+    'box_bachelor_degree',
+    'date_bachelor_degree',
+    'box_bachelor_program',
+    'date_bachelor_program',
+    'box_abitur_degree',
+    'date_abitur_degree',
+    'box_abitur_program',
+    'date_abitur_program',
+    'box_grundschule_program',
+    'date_grundschule_program',
+    // Career path:
+    'box_student_asistant_MAK',
+    'date_student_assistant_MAK',
+    'box_student_asistant_HSP',
+    'date_student_assistant_HSP',
+    'box_FSJ',
+    'date_FSJ',
+    'box_stadt_events',
+    'date_stadt_events',
+    'box_IAV',
+    'date_IAV',
+    // Grants & Awards:
+    'box_master',
+    'date_master',
+    'box_deanslist_1',
+    'date_deanslist_1',
+    'box_deanslist_2',
+    'date_deanslist_2',
+    'box_deanslist_3',
+    'date_deanslist_3',
+    'box_deanslist_4',
+    'date_deanslist_4',
+    'box_bachelor',
+    'date_bachelor',
+    // Research:
+    'box_project_1',
+    'box_project_2',
+    // Teaching:
+    'winter_2324',
+    'exercise_winter_2324',
+    'summer_2023',
+    'exercise_summer_2023',
+    'winter_2223',
+    'exercise_winter_2223',
+    'seminar_winter_2223',
+    'summer_2022',
+    'exercise_summer_2022',
+    'seminar_summer_2022',
+    'winter_2122',
+    'exercise_winter_2122',
+    'seminar1_winter_2122',
+    'seminar2_winter_2122',
+    // Engagement: (none)
+    // Misc: (none)
+]
+
+for (let x in my_boxes) {
+    if (typeof document.getElementById(x) != "undefined") {
+        observer.observe(document.getElementById(x))
+    }
+}
+
+
+
+
 // Welcome: (None)
 // Academic formation:
+
 observer.observe(document.getElementById('box_phd_program'));
 observer.observe(document.getElementById('box_master_degree'));
 observer.observe(document.getElementById('date_master_degree'));
@@ -241,18 +315,7 @@ document.getElementById('box_abitur_program').onclick = function() {
 }
 
 
-
-
-
-
-
-
-
-
-
 window.onload = function() {
     PasteChangeDate();
     ClickForInformation();
-}
-
-/// TODO: Transfer all other functions into this file as well and rename the file
+};
