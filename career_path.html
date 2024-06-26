@@ -319,42 +319,5 @@
 
 </html>
 
-<!-- Update the date of the last change: -->
+<!-- Access the functions: -->
 <script type="text/javascript" src="my_functions.js"></script>
-
-<script type="text/javascript">
-    function WriteMeAnEmail() {
-        window.location.href = "mailto:piehl@wipol.uni-hannover.de"
-    }
-
-    function MakeTextBlack(text) {
-        text.style.color = '#000000';
-    }
-    function MakeTextBlue(text) {
-        text.style.color = '#4996bf';
-    }
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                if (entry.target.getAttribute('class') === 'info_box_black_more' || entry.target.getAttribute('class') === 'info_box_black_less'){
-                    entry.target.classList.add('info_box_enter')
-                }
-                if (entry.target.getAttribute('class') === 'date'){
-                    entry.target.classList.add('dates_enter')
-                }
-            }
-        })
-    });
-
-    observer.observe(document.getElementById('box_student_asistant_MAK'));
-    observer.observe(document.getElementById('date_student_assistant_MAK'));
-    observer.observe(document.getElementById('box_student_asistant_HSP'));
-    observer.observe(document.getElementById('date_student_assistant_HSP'));
-    observer.observe(document.getElementById('box_FSJ'));
-    observer.observe(document.getElementById('date_FSJ'));
-    observer.observe(document.getElementById('box_stadt_events'));
-    observer.observe(document.getElementById('date_stadt_events'));
-    observer.observe(document.getElementById('box_IAV'));
-    observer.observe(document.getElementById('date_IAV'));
-</script>
