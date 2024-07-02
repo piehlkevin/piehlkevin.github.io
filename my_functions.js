@@ -1,6 +1,6 @@
 /// Adjust the date of the last update on all pages:
 function PasteChangeDate() {
-    document.getElementById('change_date').innerHTML = "26/06/2024";
+    document.getElementById('change_date').innerHTML = "02/07/2024";
 }
 
 /// Open a new window to write an e-mail:
@@ -76,6 +76,7 @@ const my_boxes = [
     // Research:
     'box_project_1',
     'box_project_2',
+    'box_project_3',
     // Teaching:
     'winter_2324',
     'exercise_winter_2324',
@@ -100,11 +101,6 @@ for (let x of my_boxes) {
         observer.observe(document.getElementById(x))
     }
 }
-
-
-
-
-
 
 // Insert the "click for more information" in the beginning:
 function ClickForInformation() {
