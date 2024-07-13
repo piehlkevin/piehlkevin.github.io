@@ -6,14 +6,17 @@
         Kevin Piehl • Teaching
     </title>
 
-    <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
     <!-- Navigation bar at the top of the page: -->
     <div class="topnav">
-        <a href="index.html">
+        <a class="my_logo">
+            <img src="../img/kp_logo_transparent_inverted.png" height="75px">
+        </a>
+        <a href="welcome">
             Welcome
         </a>
 
@@ -44,30 +47,34 @@
         <a href="miscellaneous">
             Miscellaneous
         </a>
-
-        <a class="kevin">
-            Kevin Piehl
-        </a>
     </div>
 
 
     <!-- Content: -->
     <div class="container">
-        <h1>
-            Teaching
-        </h1>
+        <img src="../img/header_teaching.jpg" width="100%">
+        <div class="header_text">
+            <h1>
+                Teaching
+            </h1>
+            <h3>
+                Below, you find the courses that I taught so far.
+            </h3>
+        </div>
+    </div>
 
-        <h3>
-            Below, you find the courses that I taught so far.
-        </h3>
+    <p class="ai_note">
+        AI-generated illustration using Microsoft Copilot / Dall-E 3
+    </p>
 
-        <hr>
+    <div class="container current_info">
+        <h2 class="current_header">
+            Current courses:
+        </h2>
+
+        <hr class="current_line" style="width: 42%;">
 
         <br>
-
-        <p style="text-align: center">
-            Currently:
-        </p>
 
         <table cellspacing="10">
             <tr>
@@ -77,13 +84,20 @@
                             Summer term 2024
                         </p>
                     </div>
+                    <div class="logo">
+                        <img src="../img/luh_logo.jpg" class="info_logo">
+                    </div>
                 </td>
                 <td class="mid_column">
                     <div class="info_box_blue_less" id="exercise_summer_2024" onmouseover="MakeTextBlack(document.getElementById('class_11'))" onmouseleave="MakeTextBlue(document.getElementById('class_11'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
-                                <b>Exercise in Behavioral Economics</b> <br>
-                                English • Bachelor level
+                                <p class="info_title">
+                                    Exercise in Behavioral Economics
+                                </p>
+                                <p class="info_details">
+                                    English • Bachelor level
+                                </p>
                             </p>
                             <p class="box_content_blue" id="class_11">
                                 Gottfried Wilhelm Leibniz University • Hanover
@@ -110,8 +124,12 @@
                     <div class="info_box_blue_less" id="seminar_summer_2024" onmouseover="MakeTextBlack(document.getElementById('class_10'))" onmouseleave="MakeTextBlue(document.getElementById('class_10'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
-                                <b>Seminar in Innovation Economics</b> <br>
-                                German • Bachelor level
+                                <p class="info_title">
+                                    Seminar in Innovation Economics
+                                </p>
+                                <p class="info_details">
+                                    German • Bachelor level
+                                </p>
                             </p>
                             <p class="box_content_blue" id="class_10">
                                 Gottfried Wilhelm Leibniz University • Hanover
@@ -128,11 +146,17 @@
             </tr>
         </table>
 
-        <br><br>
+    </div>
 
-        <p style="text-align: center">
-            Previously:
-        </p>
+    <div class="container former_info">
+
+        <h2 class="former_header">
+            Previous courses:
+        </h2>
+
+        <hr class="former_line" style="width: 45%;">
+
+        <br>
 
         <table cellspacing="10">
             <tr>
@@ -142,13 +166,20 @@
                             Winter term 2023/2024
                         </p>
                     </div>
+                    <div class="logo" id="logo_winter_2324">
+                        <img src="../img/luh_logo.jpg" class="info_logo">
+                    </div>
                 </td>
                 <td class="mid_column">
                     <div class="info_box_black_less" id="exercise_winter_2324" onmouseover="MakeTextBlack(document.getElementById('class_9'))" onmouseleave="MakeTextBlue(document.getElementById('class_9'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
-                                <b>Exercise in Introduction to Innovation Economics</b> <br>
-                                German • Bachelor level
+                                <p class="info_title">
+                                    Exercise in Introduction to Innovation Economics
+                                </p>
+                                <p class="info_details">
+                                    German • Bachelor level
+                                </p>
                             </p>
                             <p class="box_content_blue" id="class_9">
                                 Gottfried Wilhelm Leibniz University • Hanover
@@ -163,7 +194,7 @@
                     </div>
                 </td>
             </tr>
-
+            <tr class="row_space"></tr>
             <tr>
                 <td class="left_column">
                     <div class="date" id="summer_2023">
@@ -171,13 +202,20 @@
                             Summer term 2023
                         </p>
                     </div>
+                    <div class="logo" id="logo_summer_2023">
+                        <img src="../img/luh_logo.jpg" class="info_logo">
+                    </div>
                 </td>
                 <td class="mid_column">
                     <div class="info_box_black_less" id="exercise_summer_2023" onmouseover="MakeTextBlack(document.getElementById('class_8'))" onmouseleave="MakeTextBlue(document.getElementById('class_8'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
-                                <b>Exercise in Incentives to Innovate</b> <br>
-                                English • Master level
+                                <p class="info_title">
+                                    Exercise in Incentives to Innovate
+                                </p>
+                                <p class="info_details">
+                                    English • Master level
+                                </p>
                             </p>
                             <p class="box_content_blue" id="class_8">
                                 Gottfried Wilhelm Leibniz University • Hanover
@@ -192,7 +230,7 @@
                     </div>
                 </td>
             </tr>
-
+            <tr class="row_space"></tr>
             <tr>
                 <td class="left_column">
                     <div class="date" id="winter_2223">
@@ -200,13 +238,20 @@
                             Winter term 2022/2023
                         </p>
                     </div>
+                    <div class="logo" id="logo_winter_2223">
+                        <img src="../img/luh_logo.jpg" class="info_logo">
+                    </div>
                 </td>
                 <td class="mid_column">
                     <div class="info_box_black_less" id="exercise_winter_2223" onmouseover="MakeTextBlack(document.getElementById('class_7'))" onmouseleave="MakeTextBlue(document.getElementById('class_7'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
-                                <b>Exercise in Introduction to Innovation Economics</b> <br>
-                                German • Bachelor level
+                                <p class="info_title">
+                                    Exercise in Introduction to Innovation Economics
+                                </p>
+                                <p class="info_details">
+                                    German • Bachelor level
+                                </p>
                             </p>
                             <p class="box_content_blue" id="class_7">
                                 Gottfried Wilhelm Leibniz University • Hanover
@@ -234,8 +279,12 @@
                     <div class="info_box_black_less" id="seminar_winter_2223" onmouseover="MakeTextBlack(document.getElementById('class_6'))" onmouseleave="MakeTextBlue(document.getElementById('class_6'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
-                                <b>Seminar in Innovation Economics</b> <br>
-                                German • Bachelor level
+                                <p class="info_title">
+                                    Seminar in Innovation Economics
+                                </p>
+                                <p class="info_details">
+                                    German • Bachelor level
+                                </p>
                             </p>
                             <p class="box_content_blue" id="class_6">
                                 Gottfried Wilhelm Leibniz University • Hanover
@@ -250,7 +299,7 @@
                     </div>
                 </td>
             </tr>
-
+            <tr class="row_space"></tr>
             <tr>
                 <td class="left_column">
                     <div class="date" id="summer_2022">
@@ -258,13 +307,20 @@
                             Summer term 2022
                         </p>
                     </div>
+                    <div class="logo" id="logo_summer_2022">
+                        <img src="../img/luh_logo.jpg" class="info_logo">
+                    </div>
                 </td>
                 <td class="mid_column">
                     <div class="info_box_black_less" id="exercise_summer_2022" onmouseover="MakeTextBlack(document.getElementById('class_5'))" onmouseleave="MakeTextBlue(document.getElementById('class_5'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
-                                <b>Exercise in Behavioral Economics</b> <br>
-                                English • Bachelor level
+                                <p class="info_title">
+                                    Exercise in Behavioral Economics
+                                </p>
+                                <p class="info_details">
+                                    English • Bachelor level
+                                </p>
                             </p>
                             <p class="box_content_blue" id="class_5">
                                 Gottfried Wilhelm Leibniz University • Hanover
@@ -292,8 +348,12 @@
                     <div class="info_box_black_less" id="seminar_summer_2022" onmouseover="MakeTextBlack(document.getElementById('class_4'))" onmouseleave="MakeTextBlue(document.getElementById('class_4'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
-                                <b>Seminar in Innovation Economics</b> <br>
-                                German • Bachelor level
+                                <p class="info_title">
+                                    Seminar in Innovation Economics
+                                </p>
+                                <p class="info_details">
+                                    German • Bachelor level
+                                </p>
                             </p>
                             <p class="box_content_blue" id="class_4">
                                 Gottfried Wilhelm Leibniz University • Hanover
@@ -308,7 +368,7 @@
                     </div>
                 </td>
             </tr>
-
+            <tr class="row_space"></tr>
             <tr>
                 <td class="left_column">
                     <div class="date" id="winter_2122">
@@ -316,13 +376,20 @@
                             Winter term 2021/2022
                         </p>
                     </div>
+                    <div class="logo" id="logo_winter_2122">
+                        <img src="../img/luh_logo.jpg" class="info_logo">
+                    </div>
                 </td>
                 <td class="mid_column">
                     <div class="info_box_black_less" id="exercise_winter_2122" onmouseover="MakeTextBlack(document.getElementById('class_3'))" onmouseleave="MakeTextBlue(document.getElementById('class_3'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
-                                <b>Exercise in Introduction to Innovation Economics</b> <br>
-                                German • Bachelor level
+                                <p class="info_title">
+                                    Exercise in Introduction to Innovation Economics
+                                </p>
+                                <p class="info_details">
+                                    German • Bachelor level
+                                </p>
                             </p>
                             <p class="box_content_blue" id="class_3">
                                 Gottfried Wilhelm Leibniz University • Hanover
@@ -350,8 +417,12 @@
                     <div class="info_box_black_less" id="seminar1_winter_2122" onmouseover="MakeTextBlack(document.getElementById('class_2'))" onmouseleave="MakeTextBlue(document.getElementById('class_2'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
-                                <b>Seminar in Accounting, Taxation and Innovation</b> <br>
-                                German • Master level
+                                <p class="info_title">
+                                    Seminar in Accounting, Taxation and Innovation
+                                </p>
+                                <p class="info_details">
+                                    German • Master level
+                                </p>
                             </p>
                             <p class="box_content_blue" id="class_2">
                                 Gottfried Wilhelm Leibniz University • Hanover
@@ -379,8 +450,12 @@
                     <div class="info_box_black_less" id="seminar2_winter_2122" onmouseover="MakeTextBlack(document.getElementById('class_1'))" onmouseleave="MakeTextBlue(document.getElementById('class_1'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
-                                <b>Seminar in Innovation Economics</b> <br>
-                                German • Bachelor level
+                                <p class="info_title">
+                                    Seminar in Innovation Economics
+                                </p>
+                                <p class="info_details">
+                                    German • Bachelor level
+                                </p>
                             </p>
                             <p class="box_content_blue" id="class_1">
                                 Gottfried Wilhelm Leibniz University • Hanover
@@ -397,9 +472,19 @@
             </tr>
 
         </table>
+
+        <br><br>
+
     </div>
 
-    <br><br>
+    <div class="bottom">
+        <div class="go_to_top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" onmouseover="MakeTextWhite(document.getElementById('go_to_top'))" onmouseleave="MakeTextBlue(document.getElementById('go_to_top'))">
+            <p id="go_to_top">
+                <span style="padding-right: 1em">&#x2912</span> go to top
+            </p>
+        </div>
+    </div>
+
 </body>
 
 <footer>
@@ -414,7 +499,7 @@
                         •
                     </a>
                     <a>
-                        <img src="img/envelope_logo.png" alt="Write me an e-mail" height="20px" onclick="WriteMeAnEmail()">
+                        <img src="../img/envelope_logo.png" alt="Write me an e-mail" height="20px" onclick="WriteMeAnEmail()">
                         <span class="tooltiptext">
                             Write me an e-mail
                         </span>
@@ -423,7 +508,7 @@
                         •
                     </a>
                     <a href=https://www.linkedin.com/in/kevin-piehl-b8850923b/" target="_blank">
-                        <img src="img/linkedin_logo_white.png" alt="Find me on LinkedIn" height="20px">
+                        <img src="../img/linkedin_logo_white.png" alt="Find me on LinkedIn" height="20px">
                         <span class="tooltiptext">
                             Find me on LinkedIn
                         </span>
@@ -432,7 +517,7 @@
                         •
                     </a>
                     <a>
-                        <img src="img/google_logo.png" alt="Find me on Google Scholar (soon)" height="20px">
+                        <img src="../img/google_logo.png" alt="Find me on Google Scholar (soon)" height="20px">
                         <span class="tooltiptext">
                             Find me on Google Scholar (soon)
                         </span>
@@ -461,4 +546,4 @@
 </html>
 
 <!-- Access the functions: -->
-<script type="text/javascript" src="my_functions.js"></script>
+<script type="text/javascript" src="../my_functions.js"></script>

@@ -6,14 +6,17 @@
         Kevin Piehl • Career Path
     </title>
 
-    <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
     <!-- Navigation bar at the top of the page: -->
     <div class="topnav">
-        <a href="index">
+        <a class="my_logo">
+            <img src="../img/kp_logo_transparent_inverted.png" height="75px">
+        </a>
+        <a href="welcome">
             Welcome
         </a>
 
@@ -44,30 +47,34 @@
         <a href="miscellaneous">
             Miscellaneous
         </a>
-
-        <a class="kevin">
-            Kevin Piehl
-        </a>
     </div>
 
 
     <!-- Content: -->
     <div class="container">
-        <h1>
-            Career Path
-        </h1>
+        <img src="../img/header_careerpath.jpg" width="100%">
+        <div class="header_text">
+            <h1>
+                Career Path
+            </h1>
+            <h3>
+                Below, you find my different working experiences.
+            </h3>
+        </div>
+    </div>
 
-        <h3>
-            Below, you find my different working experiences.
-        </h3>
+    <p class="ai_note">
+        AI-generated illustration using Microsoft Copilot / Dall-E 3
+    </p>
 
-        <hr>
+    <div class="container current_info">
+        <h2 class="current_header">
+            Current position:
+        </h2>
+
+        <hr class="current_line" style="width: 40%;">
 
         <br>
-
-        <p style="text-align: center">
-            Currently:
-        </p>
 
         <table cellspacing="10">
             <tr>
@@ -77,13 +84,20 @@
                             since 15 July 2021
                         </p>
                     </div>
+                    <div class="logo">
+                        <img src="../img/luh_logo.jpg" class="info_logo">
+                    </div>
                 </td>
                 <td class="mid_column">
                     <div class="info_box_blue_less" onmouseover="MakeTextBlack(document.getElementById('WIPOL'))" onmouseleave="MakeTextBlue(document.getElementById('WIPOL'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
-                                <b>PhD Candidate</b> <br>
-                                Contact: Prof. Dr. Marina Schröder
+                                <p class="info_title">
+                                    PhD Candidate
+                                </p>
+                                <p class="info_details">
+                                    Contact: Prof. Dr. Marina Schröder
+                                </p>
                             </p>
                             <p class="box_content_blue" id="WIPOL">
                                 Institute of Economic Policy <br>
@@ -101,11 +115,17 @@
             </tr>
         </table>
 
-        <br><br>
+    </div>
 
-        <p style="text-align: center">
-            Previously:
-        </p>
+    <div class="container former_info">
+
+        <h2 class="former_header">
+            Previous positions:
+        </h2>
+
+        <hr class="former_line" style="width: 50%;">
+
+        <br>
 
         <table cellspacing="10">
             <tr>
@@ -115,13 +135,20 @@
                             01 September 2019 to 14 July 2021
                         </p>
                     </div>
+                    <div class="logo" id="logo_student_asistant_MAK">
+                        <img src="../img/luh_logo.jpg" class="info_logo">
+                    </div>
                 </td>
                 <td class="mid_column">
                     <div class="info_box_black_less" id="box_student_asistant_MAK" onmouseover="MakeTextBlack(document.getElementById('MAK'))" onmouseleave="MakeTextBlue(document.getElementById('MAK'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
-                                <b>Student Assistant</b> <br>
-                                Contact: Prof. Dr. Martin Gassebner
+                                <p class="info_title">
+                                    Student Assistant
+                                </p>
+                                <p class="info_details">
+                                    Contact: Prof. Dr. Martin Gassebner
+                                </p>
                             </p>
                             <p class="box_content_blue" id="MAK">
                                 Institute of Macroeconomics <br>
@@ -137,7 +164,7 @@
                     </div>
                 </td>
             </tr>
-
+            <tr class="row_space"></tr>
             <tr>
                 <td class="left_column">
                     <div class="date" id="date_student_assistant_HSP">
@@ -145,13 +172,20 @@
                             01 October 2016 to 30 June 2020
                         </p>
                     </div>
+                    <div class="logo" id="logo_student_assistant_HSP">
+                        <img src="../img/luh_logo.jpg" class="info_logo">
+                    </div>
                 </td>
                 <td class="mid_column">
                     <div class="info_box_black_less" id="box_student_asistant_HSP" onmouseover="MakeTextBlack(document.getElementById('HSP'))" onmouseleave="MakeTextBlue(document.getElementById('HSP'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
-                                <b>Student Assistant</b> <br>
-                                Contact: Tim Fischer
+                                <p class="info_title">
+                                    Student Assistant
+                                </p>
+                                <p class="info_details">
+                                    Contact: Tim Fischer
+                                </p>
                             </p>
                             <p class="box_content_blue" id="HSP">
                                 University Sports Center <br>
@@ -167,7 +201,7 @@
                     </div>
                 </td>
             </tr>
-
+            <tr class="row_space"></tr>
             <tr>
                 <td class="left_column">
                     <div class="date" id="date_FSJ">
@@ -175,13 +209,20 @@
                             15 September 2015 to 14 August 2016
                         </p>
                     </div>
+                    <div class="logo" id="logo_FSJ">
+                        <img src="../img/luh_logo.jpg" class="info_logo">
+                    </div>
                 </td>
                 <td class="mid_column">
                     <div class="info_box_black_less" id="box_FSJ" onmouseover="MakeTextBlack(document.getElementById('FSJ'))" onmouseleave="MakeTextBlue(document.getElementById('FSJ'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
-                                <b>Voluntary Work in Sports</b> <br>
-                                Contact: Tim Fischer
+                                <p class="info_title">
+                                    Voluntary Work in Sports
+                                </p>
+                                <p class="info_details">
+                                    Contact: Tim Fischer
+                                </p>
                             </p>
                             <p class="box_content_blue" id="FSJ">
                                 University Sports Center <br>
@@ -197,7 +238,7 @@
                     </div>
                 </td>
             </tr>
-
+            <tr class="row_space"></tr>
             <tr>
                 <td class="left_column">
                     <div class="date" id="date_stadt_events">
@@ -205,13 +246,20 @@
                             04 July 2015 to 14 September 2015
                         </p>
                     </div>
+                    <div class="logo" id="logo_stadt_events">
+                        <img src="../img/stadtevents_logo.jpg" class="info_logo">
+                    </div>
                 </td>
                 <td class="mid_column">
                     <div class="info_box_black_less" id="box_stadt_events" onmouseover="MakeTextBlack(document.getElementById('stadt_events'))" onmouseleave="MakeTextBlue(document.getElementById('stadt_events'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
-                                <b>Internship</b> <br>
-                                Contact: Dipl. Soz.-Wiss. Mario Giovelli
+                                <p class="info_title">
+                                    Internship
+                                </p>
+                                <p class="info_details">
+                                    Contact: Dipl. Soz.-Wiss. Mario Giovelli
+                                </p>
                             </p>
                             <p class="box_content_blue" id="stadt_events">
                                 Stadt Events GmbH • Hanover
@@ -226,7 +274,7 @@
                     </div>
                 </td>
             </tr>
-
+            <tr class="row_space"></tr>
             <tr>
                 <td class="left_column">
                     <div class="date" id="date_IAV">
@@ -234,12 +282,20 @@
                             October 2012
                         </p>
                     </div>
+                    <div class="logo" id="logo_IAV">
+                        <img src="../img/iav_logo.png" class="info_logo">
+                    </div>
                 </td>
                 <td class="mid_column">
                     <div class="info_box_black_less" id="box_IAV" onmouseover="MakeTextBlack(document.getElementById('IAV'))" onmouseleave="MakeTextBlue(document.getElementById('IAV'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
-                                <b>Two-Week Internship</b> <br>
+                                <p class="info_title">
+                                    Two-Week Internship
+                                </p>
+                                <p class="info_details">
+
+                                </p>
                             </p>
                             <p class="box_content_blue" id="IAV">
                                 IAV GmbH • Gifhorn
@@ -255,9 +311,18 @@
                 </td>
             </tr>
         </table>
+
+        <br><br>
+
     </div>
 
-    <br><br>
+    <div class="bottom">
+        <div class="go_to_top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" onmouseover="MakeTextWhite(document.getElementById('go_to_top'))" onmouseleave="MakeTextBlue(document.getElementById('go_to_top'))">
+            <p id="go_to_top">
+                <span style="padding-right: 1em">&#x2912</span> go to top
+            </p>
+        </div>
+    </div>
 
 </body>
 
@@ -273,7 +338,7 @@
                         •
                     </a>
                     <a>
-                        <img src="img/envelope_logo.png" alt="Write me an e-mail" height="20px" onclick="WriteMeAnEmail()">
+                        <img src="../img/envelope_logo.png" alt="Write me an e-mail" height="20px" onclick="WriteMeAnEmail()">
                         <span class="tooltiptext">
                             Write me an e-mail
                         </span>
@@ -282,7 +347,7 @@
                         •
                     </a>
                     <a href=https://www.linkedin.com/in/kevin-piehl-b8850923b/" target="_blank">
-                        <img src="img/linkedin_logo_white.png" alt="Find me on LinkedIn" height="20px">
+                        <img src="../img/linkedin_logo_white.png" alt="Find me on LinkedIn" height="20px">
                         <span class="tooltiptext">
                             Find me on LinkedIn
                         </span>
@@ -291,7 +356,7 @@
                         •
                     </a>
                     <a>
-                        <img src="img/google_logo.png" alt="Find me on Google Scholar (soon)" height="20px">
+                        <img src="../img/google_logo.png" alt="Find me on Google Scholar (soon)" height="20px">
                         <span class="tooltiptext">
                             Find me on Google Scholar (soon)
                         </span>
@@ -320,4 +385,4 @@
 </html>
 
 <!-- Access the functions: -->
-<script type="text/javascript" src="my_functions.js"></script>
+<script type="text/javascript" src="../my_functions.js"></script>

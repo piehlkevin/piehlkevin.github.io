@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>
-        Kevin Piehl • Welcome
+        Kevin Piehl
     </title>
 
     <link rel="icon" href="img/favicon.ico">
@@ -11,95 +11,73 @@
 </head>
 
 <body>
-    <!-- Navigation bar at the top of the page: -->
-    <div class="topnav">
-        <a class="active" href="index">
-            Welcome
-        </a>
-
-        <a href="academic_formation">
-            Academic Formation
-        </a>
-
-        <a href="career_path">
-            Career Path
-        </a>
-
-        <a href="grants_awards">
-            Grants & Awards
-        </a>
-
-        <a href="research">
-            Research
-        </a>
-
-        <a href="teaching">
-            Teaching
-        </a>
-
-        <a href="engagement">
-            Engagement
-        </a>
-
-        <a href="miscellaneous">
-            Miscellaneous
-        </a>
-
-        <a class="kevin">
-            Kevin Piehl
-        </a>
-    </div>
-
-
     <!-- Content: -->
-    <div class="container">
-        <h1>
-            Welcome
-        </h1>
+    <div style="text-align: center; padding-top: 0">
+        <video width="50%" autoplay>
+            <source src="img/kp_logo_white.mp4" type="video/mp4">
+        </video>
+    </div>
 
-        <h3>
-            and thank you for your interest in me!
-        </h3>
+    <div>
+        <p class="final_note_up" style="margin-top: 0;">
+            Please choose you preferred language
+        </p>
 
-        <hr>
+        <p class="final_note_down">
+            Bitte wähle Deine gewünschte Sprache • Choisis ta langue préferée, s. t. p.
+        </p>
+    </div>
 
-        <div style="text-align: center; padding-top: 0">
-            <video width="600" height="600" autoplay>
-                <source src="img/kp_logo_white.mp4" type="video/mp4">
-            </video>
-        </div>
+    <div class="former_info">
+        <div style="height: 5em"></div>
+        <table cellspacing="10">
+            <tr>
+                <td width="33%">
+                    <a href="en/welcome.html">
+                        <img src="img/flag_en.avif" class="info_photo" alt="english">
+                    </a>
+                    <p class="final_note_down">
+                        English
+                    </p>
+                    <p style="height: 1em">
 
-        <div>
-            <p style="text-align: center">
-                This is my personal webpage. Some interesting things are coming up but it will still take some time.
-            </p>
-            <br><br><br>
-        </div>
+                    </p>
+                </td>
+                <td width="33%">
+                    <a>
+                        <img src="img/flag_de.avif" class="info_photo" alt="deutsch" style="opacity: 0.5">
+                    </a>
+                    <p class="final_note_down">
+                        Deutsch
+                    </p>
+                    <p style="text-align: center">
+                        (bald verfügbar)
+                    </p>
+                </td>
+                <td width="33%">
+                    <a>
+                        <img src="img/flag_fr.avif" class="info_photo" alt="français" style="opacity: 0.5">
+                    </a>
+                    <p class="final_note_down">
+                        Français
+                    </p>
+                    <p style="text-align: center">
+                        (disponible tôt)
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <div style="height: 5em"></div>
+    </div>
 
-        <div id="contact_box" onclick="WriteMeAnEmail()">
-            <p style="text-align: center">
-                If you have any questions in the meantime, feel free to contact me:
-            </p>
 
-            <p style="text-align: center">
-                <b>Kevin Piehl</b> <br>
-                Institute of Economic Policy <br>
-                Leibniz University Hanover <br>
-                Königsworther Platz 1 <br>
-                30167 Hannover <br>
-            </p>
-
-            <p style="text-align: center">
-                piehl@wipol.uni-hannover.de <br>
-                <i>click to contact me</i>
+    <div class="bottom">
+        <div class="go_to_top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" onmouseover="MakeTextWhite(document.getElementById('go_to_top'))" onmouseleave="MakeTextBlue(document.getElementById('go_to_top'))">
+            <p id="go_to_top">
+                <span style="padding-right: 1em">&#x2912</span> go to top
             </p>
         </div>
     </div>
-
-    <br><br>
-
-    <!-- Access the functions: -->
-    <script type="text/javascript" src="my_functions.js"></script>
 
 </body>
 
@@ -160,3 +138,6 @@
 </footer>
 
 </html>
+
+<!-- Access the functions: -->
+<script type="text/javascript" src="my_functions.js"></script>

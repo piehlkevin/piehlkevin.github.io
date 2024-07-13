@@ -6,14 +6,17 @@
         Kevin Piehl • Research
     </title>
 
-    <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
     <!-- Navigation bar at the top of the page: -->
     <div class="topnav">
-        <a href="index">
+        <a class="my_logo">
+            <img src="../img/kp_logo_transparent_inverted.png" height="75px">
+        </a>
+        <a href="welcome">
             Welcome
         </a>
 
@@ -44,30 +47,34 @@
         <a href="miscellaneous">
             Miscellaneous
         </a>
-
-        <a class="kevin">
-            Kevin Piehl
-        </a>
     </div>
 
 
     <!-- Content: -->
     <div class="container">
-        <h1>
-            Research
-        </h1>
+        <img src="../img/header_research.jpg" width="100%">
+        <div class="header_text">
+            <h1>
+                Research
+            </h1>
+            <h3>
+                Below, you find information on my research projects.
+            </h3>
+        </div>
+    </div>
 
-        <h3>
-            Below, you find information on my research projects.
-        </h3>
+    <p class="ai_note">
+        AI-generated illustration using Microsoft Copilot / Dall-E 3
+    </p>
 
-        <hr>
+    <div class="container current_info">
+        <h2 class="current_header">
+            Work in progress:
+        </h2>
+
+        <hr class="current_line" style="width: 52%;">
 
         <br>
-
-        <p style="text-align: center">
-            Work in progress:
-        </p>
 
         <table cellspacing="10">
             <tr>
@@ -81,9 +88,16 @@
                     <div class="info_box_black_less" id="box_project_1" onmouseover="MakeTextBlack(document.getElementById('project_1'))" onmouseleave="MakeTextBlue(document.getElementById('project_1'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
-                                <b>Input- versus Output-based Incentives in Innovation — An Experimental Analysis</b> <br>
-                                Collaborators: Kay Blaufus and Marina Schröder <br><br>
-                                <i>more information available soon</i> <br>
+                                <p class="info_title">
+                                    Input- versus Output-based Incentives in Innovation — An Experimental Analysis
+                                </p>
+                                <p class="info_details">
+                                    Collaborators: Kay Blaufus and Marina Schröder
+                                </p>
+                                <br>
+                                <p class="box_content_black">
+                                    <i>more information available soon</i>
+                                </p>
                             </p>
                         </p>
                     </div>
@@ -95,7 +109,7 @@
                     </div>
                 </td>
             </tr>
-
+            <tr class="row_space"></tr>
             <tr>
                 <td class="right_column">
                     <div>
@@ -107,9 +121,15 @@
                     <div class="info_box_black_less" id="box_project_2" onmouseover="MakeTextBlack(document.getElementById('project_2'))" onmouseleave="MakeTextBlue(document.getElementById('project_2'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
-                                <b>Input versus Output Contingent Tax Incentives and Venture Capital</b> <br>
-                                Collaborators: Kay Blaufus and Marina Schröder <br><br>
-                                <i>more information available soon</i> <br>
+                                <p class="info_title">
+                                    Input versus Output Contingent Tax Incentives and Venture Capital
+                                </p>
+                                <p class="info_details">
+                                    Collaborators: Kay Blaufus and Marina Schröder
+                                </p>
+                                <p class="box_content_black">
+                                    <i>more information available soon</i>
+                                </p>
                             </p>
                         </p>
                     </div>
@@ -121,7 +141,7 @@
                     </div>
                 </td>
             </tr>
-
+            <tr class="row_space"></tr>
             <tr>
                 <td class="right_column">
                     <div>
@@ -133,9 +153,15 @@
                     <div class="info_box_black_less" id="box_project_3" onmouseover="MakeTextBlack(document.getElementById('project_3'))" onmouseleave="MakeTextBlue(document.getElementById('project_3'))">
                         <p style="text-align: center">
                             <p class="box_content_black">
-                                <b>How to Choose Between R&D Ventures?</b> <br>
-                                Collaborator: Alexander Senk <br><br>
-                                <i>more information available soon</i> <br>
+                                <p class="info_title">
+                                    How to Choose Between R&D Ventures?
+                                </p>
+                                <p class="info_details">
+                                    Collaborator: Alexander Senk
+                                </p>
+                                <p class="box_content_black">
+                                    <i>more information available soon</i>
+                                </p>
                             </p>
                         </p>
                     </div>
@@ -151,9 +177,18 @@
 
 
         </table>
+
+        <br><br>
+
     </div>
 
-    <br><br>
+    <div class="bottom">
+        <div class="go_to_top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" onmouseover="MakeTextWhite(document.getElementById('go_to_top'))" onmouseleave="MakeTextBlue(document.getElementById('go_to_top'))">
+            <p id="go_to_top">
+                <span style="padding-right: 1em">&#x2912</span> go to top
+            </p>
+        </div>
+    </div>
 
 </body>
 
@@ -169,7 +204,7 @@
                         •
                     </a>
                     <a>
-                        <img src="img/envelope_logo.png" alt="Write me an e-mail" height="20px" onclick="WriteMeAnEmail()">
+                        <img src="../img/envelope_logo.png" alt="Write me an e-mail" height="20px" onclick="WriteMeAnEmail()">
                         <span class="tooltiptext">
                             Write me an e-mail
                         </span>
@@ -178,7 +213,7 @@
                         •
                     </a>
                     <a href=https://www.linkedin.com/in/kevin-piehl-b8850923b/" target="_blank">
-                        <img src="img/linkedin_logo_white.png" alt="Find me on LinkedIn" height="20px">
+                        <img src="../img/linkedin_logo_white.png" alt="Find me on LinkedIn" height="20px">
                         <span class="tooltiptext">
                             Find me on LinkedIn
                         </span>
@@ -187,7 +222,7 @@
                         •
                     </a>
                     <a>
-                        <img src="img/google_logo.png" alt="Find me on Google Scholar (soon)" height="20px">
+                        <img src="../img/google_logo.png" alt="Find me on Google Scholar (soon)" height="20px">
                         <span class="tooltiptext">
                             Find me on Google Scholar (soon)
                         </span>
@@ -216,4 +251,4 @@
 </html>
 
 <!-- Update the date of the last change: -->
-<script type="text/javascript" src="my_functions.js"></script>
+<script type="text/javascript" src="../my_functions.js"></script>
