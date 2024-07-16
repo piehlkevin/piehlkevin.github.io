@@ -187,6 +187,7 @@ video {
 .cv_download p {
     color: #4996bf;
     text-align: center;
+    text-underline: none;
 }
 
 .go_to_top {
