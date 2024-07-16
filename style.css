@@ -61,6 +61,7 @@ hr.former_line {
     background-color: black;
     color: #C2C2C2;
     padding-right: 30px!important;
+    padding-left: 25px!important;
 }
 
 h1 {
@@ -107,7 +108,7 @@ h3 {
 
 .final_note_down {
     text-align: center;
-    font-size: 24px!important;
+    font-size: 34px!important;
     font-weight: bolder;
 }
 
@@ -117,6 +118,8 @@ img.info_logo {
 
 img.info_photo {
     width: 100%;
+    border: 2px solid #000000;
+    box-shadow: 1px 1px 1px #000000;
 }
 
 img.header {
@@ -165,6 +168,25 @@ video {
     margin-bottom: 3em;
     text-align: center;
     align-items: center;
+}
+
+.cv_download {
+    width: 400px;
+    border: 2px solid #4996bf;
+    border-radius: 20px;
+    margin: auto;
+    transition: background-color 0.25s;
+}
+
+.cv_download:hover {
+    background-color: #4996bf;
+    transition: background-color 0.25s;
+    cursor: pointer;
+}
+
+.cv_download p {
+    color: #4996bf;
+    text-align: center;
 }
 
 .go_to_top {
@@ -272,6 +294,21 @@ video {
     font-size: 24px;
     text-align: center;
     margin-top: 0;
+}
+
+.info_welcome {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.highlight {
+    font-size: 28px;
+    white-space: nowrap;
+    background-size: 200%;
+    background-image: linear-gradient(to right, transparent 50%, #4996bf 50%);
+    border-radius: 10px;
+    padding: 0 8px 0 8px;
 }
 
 table {
@@ -433,6 +470,22 @@ footer a:hover .tooltiptext {
     }
 }
 
+@keyframes mark-text {
+    0%{
+        background-position: 0;
+    }
+    50%{
+        color: #000000;
+    }
+    75%{
+        box-shadow: none;
+    }
+    100%{
+        background-position: -100%;
+        color: #FFFFFF;
+        box-shadow: 1px 2px 1px #000000;
+    }
+}
 
 @media (prefers-reduced-motion: no-preference){
     .info_box_enter {
@@ -449,5 +502,20 @@ footer a:hover .tooltiptext {
         animation: dates-appear-alt;
         animation-duration: 2s;
         animation-iteration-count: 1;
+    }
+    .highlight_text {
+        animation: mark-text;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    .first {
+        animation-delay: 0.5s;
+    }
+    .second {
+        animation-delay: 1.5s;
+    }
+    .third {
+        animation-delay: 2.5s;
     }
 }

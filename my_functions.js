@@ -1,6 +1,6 @@
 /// Adjust the date of the last update on all pages:
 function PasteChangeDate() {
-    document.getElementById('change_date').innerHTML = "13/07/2024";
+    document.getElementById('change_date').innerHTML = "16/07/2024";
 }
 
 /// Open a new window to write an e-mail:
@@ -49,7 +49,14 @@ const observer = new IntersectionObserver(entries => {
                     entry.target.classList.add('dates_enter')
                 }
             }
+
+            if (entry.target.getAttribute('class') === 'highlight first' ||
+                entry.target.getAttribute('class') === 'highlight second' ||
+                entry.target.getAttribute('class') === 'highlight third') {
+                entry.target.classList.add('highlight_text')
+            }
         }
+
     })
 });
 
@@ -63,6 +70,18 @@ const my_boxes = [
     'photo_3',
     'box_4',
     'photo_4',
+    'text_1',
+    'text_2',
+    'text_3',
+    'text_4',
+    'text_5',
+    'text_6',
+    'text_7',
+    'text_8',
+    'text_9',
+    'text_10',
+    'text_11',
+    'text_12',
     // Academic formation:
     'box_phd_program',
     'box_master_degree',
@@ -197,7 +216,6 @@ window.onload = function() {
     PasteChangeDate();
     ClickForInformation();
 };
-
 
 // Add the text when clicking on the boxes:
 let show_phd_program = 0;
