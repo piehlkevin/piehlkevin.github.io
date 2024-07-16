@@ -10,11 +10,13 @@ body {
 hr.current_line {
     border: 3px solid #4996bf;
     margin-bottom: 5em;
+    width: 50%;
 }
 
 hr.former_line {
     border: 3px solid black;
     margin-bottom: 5em;
+    width: 50%;
 }
 
 ::selection {
@@ -170,8 +172,12 @@ video {
     align-items: center;
 }
 
+.cv {
+    text-decoration: none;
+}
+
 .cv_download {
-    width: 400px;
+    width: 50%;
     border: 2px solid #4996bf;
     border-radius: 20px;
     margin: auto;
@@ -185,9 +191,14 @@ video {
 }
 
 .cv_download p {
+    font-size: 28px;
     color: #4996bf;
     text-align: center;
-    text-underline: none;
+    vertical-align: center;
+}
+
+.cv_download span {
+    font-size: 40px;
 }
 
 .go_to_top {
