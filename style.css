@@ -378,6 +378,14 @@ ul li:before {
     color: #4996bf;
 }
 
+.more {
+    transform: rotate(-90deg);
+}
+
+.less {
+    transform: rotate(90deg);
+}
+
 footer {
     background-color: #4996bf;
     margin-top: 0;

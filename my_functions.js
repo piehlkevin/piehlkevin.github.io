@@ -1,6 +1,6 @@
 /// Adjust the date of the last update on all pages:
 function PasteChangeDate() {
-    document.getElementById('change_date').innerHTML = "16/07/2024";
+    document.getElementById('change_date').innerHTML = "17/07/2024";
 }
 
 /// Open a new window to write an e-mail:
@@ -203,12 +203,31 @@ for (let x of my_boxes) {
 
 // Insert the "click for more information" in the beginning:
 function ClickForInformation() {
-    document.getElementById('info_phd_program').innerHTML = "<i>click for more information</i>";
-    document.getElementById('info_master_degree').innerHTML = "<i>click for more information</i>";
-    document.getElementById('info_master_program').innerHTML = "<i>click for more information</i>";
-    document.getElementById('info_bachelor_degree').innerHTML = "<i>click for more information</i>";
-    document.getElementById('info_bachelor_program').innerHTML = "<i>click for more information</i>";
-    document.getElementById('info_abitur_program').innerHTML = "<i>click for more information</i>";
+    // Academic formation:
+    if (document.getElementsByTagName('h1')[0].innerText === "Academic Formation") {
+        document.getElementById('info_phd_program').innerHTML = "<i>click for more information</i><br>" +
+        "<div class='more'><span>&#10094</span></div>";
+        document.getElementById('info_master_degree').innerHTML = "<i>click for more information</i><br>" +
+        "<div class='more'><span>&#10094</span></div>";
+        document.getElementById('info_master_program').innerHTML = "<i>click for more information</i><br>" +
+        "<div class='more'><span>&#10094</span></div>";
+        document.getElementById('info_bachelor_degree').innerHTML = "<i>click for more information</i><br>" +
+        "<div class='more'><span>&#10094</span></div>";
+        document.getElementById('info_bachelor_program').innerHTML = "<i>click for more information</i><br>" +
+        "<div class='more'><span>&#10094</span></div>";
+        document.getElementById('info_abitur_program').innerHTML = "<i>click for more information</i><br>" +
+        "<div class='more'><span>&#10094</span></div>";
+    }
+
+    // Miscellaneous:
+    if (document.getElementsByTagName('h1')[0].innerText === "Miscellaneous") {
+        document.getElementById('info_english').innerHTML = "<i>click for more information</i><br>" +
+        "<div class='more'><span>&#10094</span></div>";
+        document.getElementById('info_french').innerHTML = "<i>click for more information</i><br>" +
+        "<div class='more'><span>&#10094</span></div>";
+        document.getElementById('info_spanish').innerHTML = "<i>click for more information</i><br>" +
+        "<div class='more'><span>&#10094</span></div>";
+    }
 }
 
 // Execute these two function on load:
@@ -224,131 +243,190 @@ let show_master_program = 0;
 let show_bachelor_degree = 0;
 let show_bachelor_program = 0;
 let show_abitur_program = 0;
+let show_english = 0;
+let show_french = 0;
+let show_spanish = 0;
 
-document.getElementById('box_phd_program').onclick = function() {
-    if (show_phd_program === 0) {
-        show_phd_program = 1;
-        document.getElementById('info_phd_program').innerHTML = "<hr>Research areas: <ul>" +
-            "<li>Experimental Innovation Economics</li>" +
-            "<li>Behavioral Economics </li>" +
-            "<li>Incentives and Innovation</li>" +
-            "<li>R&D Project Selection</li></ul> <hr> Elective modules: <ul> " +
-            "<li>Machine Learning</li>" +
-            "<li>Applied Game Theory and Information Economics</li>" +
-            "<li>Strategic Experimentation and Learning</li></ul> <hr> Summer Schools: <ul>" +
-            "<li>2024 REGIS Summer School (Universidad Carlos III • Madrid)</li>" +
-            "<li>2022 BESLAB Computational and Experimental Economics Summer School (Universitat Pompeu Fabra • Barcelona)</li>" +
-            " </ul> <hr> Further voluntary courses: <ul>" +
-            "<li>2022-2023 University Didactic Certificate Program 'Pro Lehre'</li>" +
-            "<li>2022 Economics of Ideas, Science and Innovation (online PhD lecture)</li>" +
-            "<li>2021-2022 Behavioral & Experimental Economics (PhD course • University Hamburg)</li> </ul> <br> " +
-            "<i>click to close</i>";
+// Academic Formation:
+if (document.getElementsByTagName('h1')[0].innerText === "Academic Formation") {
+    document.getElementById('box_phd_program').onclick = function () {
+        if (show_phd_program === 0) {
+            show_phd_program = 1;
+            document.getElementById('info_phd_program').innerHTML = "<hr>Research areas: <ul>" +
+                "<li>Experimental Innovation Economics</li>" +
+                "<li>Behavioral Economics </li>" +
+                "<li>Incentives and Innovation</li>" +
+                "<li>R&D Project Selection</li></ul> <hr> Elective modules: <ul> " +
+                "<li>Machine Learning</li>" +
+                "<li>Applied Game Theory and Information Economics</li>" +
+                "<li>Strategic Experimentation and Learning</li></ul> <hr> Summer Schools: <ul>" +
+                "<li>2024 REGIS Summer School (Universidad Carlos III • Madrid)</li>" +
+                "<li>2022 BESLAB Computational and Experimental Economics Summer School (Universitat Pompeu Fabra • Barcelona)</li>" +
+                " </ul> <hr> Further voluntary courses: <ul>" +
+                "<li>2022–2023 University Didactic Certificate Program 'Pro Lehre'</li>" +
+                "<li>2022 Economics of Ideas, Science and Innovation (online PhD lecture)</li>" +
+                "<li>2021–2022 Behavioral & Experimental Economics (PhD course • University Hamburg)</li> </ul> <br> " +
+                "<i>click to close</i><br>" +
+                "<div class='less'><span>&#10094</span></div>"
+        } else {
+            show_phd_program = 0;
+            document.getElementById('info_phd_program').innerHTML = "<i>click for more information</i><br>" +
+            "<div class='more'><span>&#10094</span></div>";
+        }
     }
-    else {
-        show_phd_program = 0;
-        document.getElementById('info_phd_program').innerHTML = "<i>click for more information</i>";
+
+    document.getElementById('box_master_degree').onclick = function () {
+        if (show_master_degree === 0) {
+            show_master_degree = 1;
+            document.getElementById('info_master_degree').innerHTML = "<hr>Thesis topic: <br> 'Does the Economy Learn to " +
+                "Cope with Pandemics?' <br> Grade: 1.0 (very good) <br><br> <i>click to close</i><br>" +
+                "<div class='less'><span>&#10094</span></div>"
+        } else {
+            show_master_degree = 0;
+            document.getElementById('info_master_degree').innerHTML = "<i>click for more information</i><br>" +
+            "<div class='more'><span>&#10094</span></div>";
+        }
+
+    }
+
+    document.getElementById('box_master_program').onclick = function () {
+        if (show_master_program === 0) {
+            show_master_program = 1;
+            document.getElementById('info_master_program').innerHTML = "<hr>Major area: <br> Economic Policy and Theory <ul>" +
+                "<li>Microeconomics</li>" +
+                "<li>Foundations of Economics Policy</li>" +
+                "<li>Master Research Seminar Applied Economic Policy</li>" +
+                "<li>Seminar Applied Economics</li>" +
+                "<li>Topics in Game Theory</li>" +
+                "<li>Brown Bag Seminar</li>" +
+                "<li>Seminar Population Economics</li>" +
+                "<li>Financial Crises</li>" +
+                "<li>Sovereign Debt</li>" +
+                "<li>Monetary Unions</li></ul>" +
+                "<hr>Minor area: <br> Empirical Economics and Econometrics <ul>" +
+                "<li>Economics of Terrorism</li>" +
+                "<li>Econometric Methods</li>" +
+                "<li>Advanced Macroeconomics I</li>" +
+                "<li>Advanced Macroeconomics II</li></ul>" +
+                "<hr>Further modules: <ul>" +
+                "<li>German Fiscal History of the 20th Century</li>" +
+                "<li>Financial Systems and Regulations</li>" +
+                "<li>Seminar Asian Economies</li>" +
+                "<li>Micro- and Macroeconomics Simulation Modelling</li>" +
+                "</ul> <br> <i>click to close</i><br>" +
+                "<div class='less'><span>&#10094</span></div>"
+        } else {
+            show_master_program = 0;
+            document.getElementById('info_master_program').innerHTML = "<i>click for more information</i><br>" +
+            "<div class='more'><span>&#10094</span></div>";
+        }
+    }
+
+    document.getElementById('box_bachelor_degree').onclick = function () {
+        if (show_bachelor_degree === 0) {
+            show_bachelor_degree = 1;
+            document.getElementById('info_bachelor_degree').innerHTML = "<hr>Thesis topic: <br> 'An Economic Analysis of " +
+                "the Naturalization Policy of the Federal Republic of Germany' <br> Grade: 1.7 (good) <br><br> " +
+                "<i>click to close</i><br>" +
+                "<div class='less'><span>&#10094</span></div>"
+        } else {
+            show_bachelor_degree = 0;
+            document.getElementById('info_bachelor_degree').innerHTML = "<i>click for more information</i><br>" +
+            "<div class='more'><span>&#10094</span></div>";
+        }
+
+    }
+
+    document.getElementById('box_bachelor_program').onclick = function () {
+        if (show_bachelor_program === 0) {
+            show_bachelor_program = 1;
+            document.getElementById('info_bachelor_program').innerHTML = "<hr>Economic specialization modules: <ul> " +
+                "<li>Econometrics</li>" +
+                "<li>Seminar Public Finance</li>" +
+                "<li>Game Theory</li>" +
+                "<li>Economic Policy</li>" +
+                "<li>Economics of Taxation</li>" +
+                "<li>Economic Growth and Development</li></ul>" +
+                "<hr>Further elective modules: <ul>" +
+                "<li>Health Economics and Healthcare Systems Research</li>" +
+                "<li>Intermediate Accounting</li>" +
+                "<li>Seminar: The History, Present, and Future of Work</li>" +
+                "<li>Professional English for Business and Economics: Business Presentations (B2)</li>" +
+                "<li>English for Economics and Management IV: Free Trade (C1)</li>" +
+                "</ul> <br> <i>click to close</i><br>" +
+                "<div class='less'><span>&#10094</span></div>"
+        } else {
+            show_bachelor_program = 0;
+            document.getElementById('info_bachelor_program').innerHTML = "<i>click for more information</i><br>" +
+            "<div class='more'><span>&#10094</span></div>";
+        }
+
+    }
+
+    document.getElementById('box_abitur_program').onclick = function () {
+        if (show_abitur_program === 0) {
+            show_abitur_program = 1;
+            document.getElementById('info_abitur_program').innerHTML = "<hr>Examination subjects: <ul> " +
+                "<li>English (Advanced written course)</li>" +
+                "<li>French (Advanced written course)</li>" +
+                "<li>Geography (Advanced written course)</li>" +
+                "<li>Mathematics (Basic written course)</li>" +
+                "<li>German (Basic oral course)</li></ul>" +
+                "<hr>Extracurricular certificates: <ul>" +
+                "<li>Certificate European Studies</li></ul> <br> <i>click to close</i><br>" +
+                "<div class='less'><span>&#10094</span></div>"
+        } else {
+            show_abitur_program = 0;
+            document.getElementById('info_abitur_program').innerHTML = "<i>click for more information</i><br>" +
+            "<div class='more'><span>&#10094</span></div>";
+        }
+
     }
 }
 
-document.getElementById('box_master_degree').onclick = function() {
-    if (show_master_degree === 0) {
-        show_master_degree = 1;
-        document.getElementById('info_master_degree').innerHTML = "<hr>Thesis topic: <br> 'Does the Economy Learn to " +
-            "Cope with Pandemics?' <br> Grade: 1.0 (very good) <br><br> <i>click to close</i>";
-    }
-    else {
-        show_master_degree = 0;
-        document.getElementById('info_master_degree').innerHTML = "<i>click for more information</i>";
-    }
-
-}
-
-document.getElementById('box_master_program').onclick = function() {
-    if (show_master_program === 0) {
-        show_master_program = 1;
-        document.getElementById('info_master_program').innerHTML = "<hr>Major area: <br> Economic Policy and Theory <ul>" +
-            "<li>Microeconomics</li>" +
-            "<li>Foundations of Economics Policy</li>" +
-            "<li>Master Research Seminar Applied Economic Policy</li>" +
-            "<li>Seminar Applied Economics</li>" +
-            "<li>Topics in Game Theory</li>" +
-            "<li>Brown Bag Seminar</li>" +
-            "<li>Seminar Population Economics</li>" +
-            "<li>Financial Crises</li>" +
-            "<li>Sovereign Debt</li>" +
-            "<li>Monetary Unions</li></ul>" +
-            "<hr>Minor area: <br> Empirical Economics and Econometrics <ul>" +
-            "<li>Economics of Terrorism</li>" +
-            "<li>Econometric Methods</li>" +
-            "<li>Advanced Macroeconomics I</li>" +
-            "<li>Advanced Macroeconomics II</li></ul>" +
-            "<hr>Further modules: <ul>" +
-            "<li>German Fiscal History of the 20th Century</li>" +
-            "<li>Financial Systems and Regulations</li>" +
-            "<li>Seminar Asian Economies</li>" +
-            "<li>Micro- and Macroeconomics Simulation Modelling</li>" +
-            "</ul> <br> <i>click to close</i>";
-    }
-    else {
-        show_master_program = 0;
-        document.getElementById('info_master_program').innerHTML = "<i>click for more information</i>";
-    }
-}
-
-document.getElementById('box_bachelor_degree').onclick = function() {
-    if (show_bachelor_degree === 0) {
-        show_bachelor_degree = 1;
-        document.getElementById('info_bachelor_degree').innerHTML = "<hr>Thesis topic: <br> 'An Economic Analysis of " +
-            "the Naturalization Policy of the Federal Republic of Germany' <br> Grade: 1.7 (good) <br><br> " +
-            "<i>click to close</i>";
-    }
-    else {
-        show_bachelor_degree = 0;
-        document.getElementById('info_bachelor_degree').innerHTML = "<i>click for more information</i>";
+// Miscellaneous:
+if (document.getElementsByTagName('h1')[0].innerText === "Miscellaneous") {
+    document.getElementById('box_english').onclick = function () {
+        if (show_english === 0) {
+            show_english = 1;
+            document.getElementById('info_english').innerHTML = "<hr><ul> " +
+                "<li>2017 & 2019 Academic language courses</li>" +
+                "<li>2013–2015 Advanced course during second-level education</li>" +
+                "<li>2010 & 2014 Scholar visits in Great Britain</li>" +
+                "<li>2009–2012 Bilingual teaching</li></ul> <br> <i>click to close</i><br>" +
+                "<div class='less'><span>&#10094</span></div>"
+        } else {
+            show_english = 0;
+            document.getElementById('info_english').innerHTML = "<i>click for more information</i><br>" +
+            "<div class='more'><span>&#10094</span></div>";
+        }
     }
 
-}
-
-document.getElementById('box_bachelor_program').onclick = function() {
-    if (show_bachelor_program === 0) {
-        show_bachelor_program = 1;
-        document.getElementById('info_bachelor_program').innerHTML = "<hr>Economic specialization modules: <ul> " +
-            "<li>Econometrics</li>" +
-            "<li>Seminar Public Finance</li>" +
-            "<li>Game Theory</li>" +
-            "<li>Economic Policy</li>" +
-            "<li>Economics of Taxation</li>" +
-            "<li>Economic Growth and Development</li></ul>" +
-            "<hr>Further elective modules: <ul>" +
-            "<li>Health Economics and Healthcare Systems Research</li>" +
-            "<li>Intermediate Accounting</li>" +
-            "<li>Seminar: The History, Present, and Future of Work</li>" +
-            "<li>Professional English for Business and Economics: Business Presentations (B2)</li>" +
-            "<li>English for Economics and Management IV: Free Trade (C1)</li>" +
-            "</ul> <br> <i>click to close</i>";
-    }
-    else {
-        show_bachelor_program = 0;
-        document.getElementById('info_bachelor_program').innerHTML = "<i>click for more information</i>";
+    document.getElementById('box_french').onclick = function () {
+        if (show_french === 0) {
+            show_french = 1;
+            document.getElementById('info_french').innerHTML = "<hr><ul> " +
+                "<li>2013–2015 Advanced course during second-level education</li>" +
+                "<li>2013–2015 Extra-curricular school group to prepare for the French language diploma</li>" +
+                "<li>2010 & 2011 Franco-German school exchange</li></ul> <br> <i>click to close</i><br>" +
+                "<div class='less'><span>&#10094</span></div>"
+        } else {
+            show_french = 0;
+            document.getElementById('info_french').innerHTML = "<i>click for more information</i><br>" +
+            "<div class='more'><span>&#10094</span></div>";
+        }
     }
 
-}
-
-document.getElementById('box_abitur_program').onclick = function() {
-    if (show_abitur_program === 0) {
-        show_abitur_program = 1;
-        document.getElementById('info_abitur_program').innerHTML = "<hr>Examination subjects: <ul> " +
-            "<li>English (Advanced written course)</li>" +
-            "<li>French (Advanced written course)</li>" +
-            "<li>Geography (Advanced written course)</li>" +
-            "<li>Mathematics (Basic written course)</li>" +
-            "<li>German (Basic oral course)</li></ul>" +
-            "<hr>Extracurricular certificates: <ul>" +
-            "<li>Certificate European Studies</li></ul> <br> <i>click to close</i>";
+    document.getElementById('box_spanish').onclick = function () {
+        if (show_spanish === 0) {
+            show_spanish = 1;
+            document.getElementById('info_spanish').innerHTML = "<hr><ul> " +
+                "<li>2018 Intensive academic language course</li></ul> <br> <i>click to close</i><br>" +
+                "<div class='less'><span>&#10094</span></div>"
+        } else {
+            show_spanish = 0;
+            document.getElementById('info_spanish').innerHTML = "<i>click for more information</i><br>" +
+            "<div class='more'><span>&#10094</span></div>";
+        }
     }
-    else {
-        show_abitur_program = 0;
-        document.getElementById('info_abitur_program').innerHTML = "<i>click for more information</i>";
-    }
-
 }
