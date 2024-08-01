@@ -1,11 +1,11 @@
 /// Adjust the date of the last update on all pages:
 function PasteChangeDate() {
-    document.getElementById('change_date').innerHTML = "18/07/2024";
+    document.getElementById('change_date').innerHTML = "01/08/2024";
 }
 
 /// Open a new window to write an e-mail:
 function WriteMeAnEmail() {
-    window.location.href = "mailto:piehl@wipol.uni-hannover.de"
+    window.location.href = "mailto:piehl@inec.uni-hannover.de"
 }
 
 /// Adjust the aesthetics of the boxes on (un-) hovering:
@@ -145,6 +145,10 @@ const my_boxes = [
     'box_project_2',
     'box_project_3',
     // Teaching:
+    'summer_2024',
+    'logo_summer_2024',
+    'exercise_summer_2024',
+    'seminar_summer_2024',
     'winter_2324',
     'logo_winter_2324',
     'exercise_winter_2324',
