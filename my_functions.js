@@ -1,6 +1,6 @@
 /// Adjust the date of the last update on all pages:
 function PasteChangeDate() {
-    document.getElementById('change_date').innerHTML = "02/08/2024";
+    document.getElementById('change_date').innerHTML = "09/09/2024";
 }
 
 /// Open a new window to write an e-mail:
