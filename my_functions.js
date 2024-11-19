@@ -1,6 +1,6 @@
 /// Adjust the date of the last update on all pages:
 function PasteChangeDate() {
-    document.getElementById('change_date').innerHTML = "09/09/2024";
+    document.getElementById('change_date').innerHTML = "17/11/2024";
 }
 
 /// Open a new window to write an e-mail:
@@ -169,6 +169,8 @@ const my_boxes = [
     'seminar1_winter_2122',
     'seminar2_winter_2122',
     // Engagement:
+    'date_AV-XXX',
+    'box_AV-XXX',
     'date_FM',
     'logo_FM',
     'box_FM',
@@ -223,6 +225,16 @@ function ClickForInformation() {
         "<div class='more'><span>&#10094</span></div>";
     }
 
+    // Research:
+    if (document.getElementsByTagName('h1')[0].innerText === "Research") {
+        document.getElementById('info_project_1').innerHTML = "<i>click for more information</i><br>" +
+        "<div class='more'><span>&#10094</span></div>";
+        document.getElementById('info_project_2').innerHTML = "<i>click for more information</i><br>" +
+        "<div class='more'><span>&#10094</span></div>";
+        document.getElementById('info_project_3').innerHTML = "<i>click for more information</i><br>" +
+        "<div class='more'><span>&#10094</span></div>";
+    }
+
     // Miscellaneous:
     if (document.getElementsByTagName('h1')[0].innerText === "Miscellaneous") {
         document.getElementById('info_english').innerHTML = "<i>click for more information</i><br>" +
@@ -247,6 +259,9 @@ let show_master_program = 0;
 let show_bachelor_degree = 0;
 let show_bachelor_program = 0;
 let show_abitur_program = 0;
+let show_project_1 = 0;
+let show_project_2 = 0;
+let show_project_3 = 0;
 let show_english = 0;
 let show_french = 0;
 let show_spanish = 0;
@@ -385,6 +400,73 @@ if (document.getElementsByTagName('h1')[0].innerText === "Academic Formation") {
             "<div class='more'><span>&#10094</span></div>";
         }
 
+    }
+}
+
+// Research:
+if (document.getElementsByTagName('h1')[0].innerText === "Research") {
+    document.getElementById('box_project_1').onclick = function () {
+        if (show_project_1 === 0) {
+            show_project_1 = 1;
+            document.getElementById('info_project_1').innerHTML =
+                "<hr>My presentations at seminars, workshops, and conferences: <ul>" +
+                "<li>2023 ESA World Meeting • Lyon (FRA)</li>" +
+                "<li>2022 Brown bag seminar Microeconomics • Hanover (GER)</li>" +
+                "<li>2022 GfeW conference • Salzburg (AUT)</li>" +
+                "<li>2022 Doctoral seminar Economic Policy • Hanover (GER)</li>" +
+                "<li>2021 PhD seminar Behavioral & Experimental Economics • Hamburg (GER)</li>" +
+                "<li>2021 Doctoral seminar Economic Policy • Hanover (GER)</li>" +
+                "</ul><hr>Download: <br>" +
+                "<i> available soon </i> <br>" +
+                "<br> <i>click to close</i><br>" +
+                "<div class='less'><span>&#10094</span></div>"
+        }
+        else {
+            show_project_1 = 0;
+            document.getElementById('info_project_1').innerHTML = "<i>click for more information</i><br>" +
+            "<div class='more'><span>&#10094</span></div>";
+        }
+    }
+    document.getElementById('box_project_2').onclick = function () {
+        if (show_project_2 === 0) {
+            show_project_2 = 1;
+            document.getElementById('info_project_2').innerHTML =
+                "<hr>My presentations at seminars, workshops, and conferences: <ul>" +
+                "<li>2024 GfeW conference • Cologne (GER)</li>" +
+                "<li>2024 REGIS Summer School • Madrid (ESP)</li>" +
+                "<li>2024 Workshop for Young Scientists on Applied Economics • Hanover (GER)</li>" +
+                "<li>2023 ASFEE conference • Montpellier (FRA)</li>" +
+                "<li>2023 C-SEB Early Ideas Workshop • Cologne (GER)</li>" +
+                "<li>2023 Doctoral seminar Economic Policy • Hanover (GER)</li>" +
+                "</ul><hr>Download: <br>" +
+                "<i> available soon </i> <br>" +
+                "<br> <i>click to close</i><br>" +
+                "<div class='less'><span>&#10094</span></div>"
+        }
+        else {
+            show_project_2 = 0;
+            document.getElementById('info_project_2').innerHTML = "<i>click for more information</i><br>" +
+            "<div class='more'><span>&#10094</span></div>";
+        }
+    }
+    document.getElementById('box_project_3').onclick = function () {
+        if (show_project_3 === 0) {
+            show_project_3 = 1;
+            document.getElementById('info_project_3').innerHTML =
+                "<hr>My presentations at seminars, workshops, and conferences: <ul>" +
+                "<li>2025 Doctoral seminar Economic Policy • Hanover (GER) <i>(planned)</i></li>" +
+                "<li>2024 Workshop on Environment/Climate/Sustainability • Luneburg (GER)</li>" +
+                "<li>2024 Annual Meeting of the Committee for Organization Economics of the VfS • Wels (AUT)</li>" +
+                "</ul><hr>Download: <br>" +
+                "<i> available soon </i> <br>" +
+                "<br> <i>click to close</i><br>" +
+                "<div class='less'><span>&#10094</span></div>"
+        }
+        else {
+            show_project_3 = 0;
+            document.getElementById('info_project_3').innerHTML = "<i>click for more information</i><br>" +
+            "<div class='more'><span>&#10094</span></div>";
+        }
     }
 }
 
