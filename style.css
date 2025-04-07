@@ -176,6 +176,10 @@ video {
     text-decoration: none;
 }
 
+.workingpaper {
+    text-decoration: none;
+}
+
 .external_link {
     text-decoration: none;
     color: #000000;
@@ -203,6 +207,31 @@ video {
 }
 
 .cv_download span {
+    font-size: 40px;
+}
+
+.workingpaper_download {
+    width: 50%;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    margin: auto;
+    transition: background-color 0.25s;
+}
+
+.workingpaper_download:hover {
+    background-color: #FFFFFF;
+    transition: background-color 0.25s;
+    cursor: pointer;
+}
+
+.workingpaper_download p {
+    font-size: 28px;
+    color: #000000;
+    text-align: center;
+    vertical-align: center;
+}
+
+.workingpaper_download span {
     font-size: 40px;
 }
 

@@ -1,6 +1,6 @@
 /// Adjust the date of the last update on all pages:
 function PasteChangeDate() {
-    document.getElementById('change_date').innerHTML = "25/11/2024";
+    document.getElementById('change_date').innerHTML = "07/04/2025";
 }
 
 /// Open a new window to write an e-mail:
@@ -145,6 +145,9 @@ const my_boxes = [
     'box_project_2',
     'box_project_3',
     // Teaching:
+    'winter_2425',
+    'logo_winter_2425',
+    'exercise_winter_2425',
     'summer_2024',
     'logo_summer_2024',
     'exercise_summer_2024',
@@ -169,6 +172,12 @@ const my_boxes = [
     'seminar1_winter_2122',
     'seminar2_winter_2122',
     // Engagement:
+    'date_BKRR',
+    'logo_BKRR',
+    'box_BKRR',
+    'date_RKRR',
+    'logo_RKRR',
+    'box_RKRR',
     'date_AV-XXX',
     'box_AV-XXX',
     'date_FM',
@@ -410,14 +419,21 @@ if (document.getElementsByTagName('h1')[0].innerText === "Research") {
             show_project_1 = 1;
             document.getElementById('info_project_1').innerHTML =
                 "<hr>My presentations at seminars, workshops, and conferences: <ul>" +
+                "<li>2024 REGIS Summer School • Madrid (ESP)</li>" +
                 "<li>2023 ESA World Meeting • Lyon (FRA)</li>" +
                 "<li>2022 Brown bag seminar Microeconomics • Hanover (GER)</li>" +
                 "<li>2022 GfeW conference • Salzburg (AUT)</li>" +
                 "<li>2022 Doctoral seminar Economic Policy • Hanover (GER)</li>" +
                 "<li>2021 PhD seminar Behavioral & Experimental Economics • Hamburg (GER)</li>" +
                 "<li>2021 Doctoral seminar Economic Policy • Hanover (GER)</li>" +
-                "</ul><hr>Download: <br>" +
-                "<i> available soon </i> <br>" +
+                "</ul><hr>Download: <br><br>" +
+                "        <a href=\"http://dx.doi.org/10.2139/ssrn.5101127\" target=\"_blank\" class=\"workingpaper\">\n" +
+                "            <div class=\"workingpaper_download\" onmouseover=\"MakeTextBlue(document.getElementById('wp1_download'))\" onmouseleave=\"MakeTextBlack(document.getElementById('wp1_download'))\">\n" +
+                "                <p id=\"wp1_download\">\n" +
+                "                    <span style=\"padding-right: 1em\">&#x2399</span> find working paper on SSRN\n" +
+                "                </p>\n" +
+                "            </div>\n" +
+                "        </a>" +
                 "<br> <i>click to close</i><br>" +
                 "<div class='less'><span>&#10094</span></div>"
         }
@@ -432,8 +448,8 @@ if (document.getElementsByTagName('h1')[0].innerText === "Research") {
             show_project_2 = 1;
             document.getElementById('info_project_2').innerHTML =
                 "<hr>My presentations at seminars, workshops, and conferences: <ul>" +
+                "<li>2025 Graduate School on Behavioral Economics and Societal Transformation • Luneburg (GER)</li>" +
                 "<li>2024 GfeW conference • Cologne (GER)</li>" +
-                "<li>2024 REGIS Summer School • Madrid (ESP)</li>" +
                 "<li>2024 Workshop for Young Scientists on Applied Economics • Hanover (GER)</li>" +
                 "<li>2023 ASFEE conference • Montpellier (FRA)</li>" +
                 "<li>2023 C-SEB Early Ideas Workshop • Cologne (GER)</li>" +
@@ -454,7 +470,7 @@ if (document.getElementsByTagName('h1')[0].innerText === "Research") {
             show_project_3 = 1;
             document.getElementById('info_project_3').innerHTML =
                 "<hr>My presentations at seminars, workshops, and conferences: <ul>" +
-                "<li>2025 Doctoral seminar Economic Policy • Hanover (GER) <i>(planned)</i></li>" +
+                "<li>2025 Doctoral seminar Economic Policy • Hanover (GER)</li>" +
                 "<li>2024 Workshop on Environment/Climate/Sustainability • Luneburg (GER)</li>" +
                 "<li>2024 Annual Meeting of the Committee for Organization Economics of the VfS • Wels (AUT)</li>" +
                 "</ul><hr>Download: <br>" +
