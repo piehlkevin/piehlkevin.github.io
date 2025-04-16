@@ -1,6 +1,6 @@
 /// Adjust the date of the last update on all pages:
 function PasteChangeDate() {
-    document.getElementById('change_date').innerHTML = "07/04/2025";
+    document.getElementById('change_date').innerHTML = "16/04/2025";
 }
 
 /// Open a new window to write an e-mail:
@@ -293,7 +293,8 @@ if (document.getElementsByTagName('h1')[0].innerText === "Academic Formation") {
                 " </ul> <hr> Further voluntary courses: <ul>" +
                 "<li>2022–2023 University Didactic Certificate Program 'Pro Lehre'</li>" +
                 "<li>2022 Economics of Ideas, Science and Innovation (online PhD lecture)</li>" +
-                "<li>2021–2022 Behavioral & Experimental Economics (PhD course • University Hamburg)</li> </ul> <br> " +
+                "<li>2021–2022 Behavioral & Experimental Economics (PhD course • University Hamburg)</li> " +
+                "<li>2021 CESS Online oTree Course (online PhD course • University of Oxford) </li> </ul> <br> " +
                 "<i>click to close</i><br>" +
                 "<div class='less'><span>&#10094</span></div>"
         } else {
